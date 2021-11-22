@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorPage matches snapshot 1`] = `
+NodeList [
+  <main
+    class="ui-main component"
+  >
+    <p>
+      Sorry, we couldn’t find the page you were looking for.
+    </p>
+  </main>,
+]
+`;

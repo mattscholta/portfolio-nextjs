@@ -1,0 +1,9 @@
+.component,
+.component h2 {
+  margin-bottom: var(--grid-4x);
+}
+
+.component :global(.ui-list-tags) li {
+  cursor: pointer;
+  transition: color 240ms ease-out;
+}

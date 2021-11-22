@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppErrorRedirect renders an error message: rendered 1`] = `
+NodeList [
+  <div>
+    Sample error message
+  </div>,
+]
+`;
+
+exports[`AppErrorRedirect returns null when there is no message: null 1`] = `NodeList []`;

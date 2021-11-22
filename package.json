@@ -1,0 +1,131 @@
+{
+  "name": "mattscholta",
+  "description": "Matthew Scholta | Just a kid, you know?",
+  "version": "1.0.0",
+  "private": true,
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*": [
+      "npm run lint:prettier:fix"
+    ],
+    "*.css": [
+      "npm run lint:styles"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "npm run lint:scripts"
+    ],
+    "*.test.{js,jsx,ts,tsx}": [
+      "npm run test:updated"
+    ]
+  },
+  "nyc": {
+    "all": true,
+    "exclude": [
+      "**/__test__/*",
+      "**.test.*"
+    ],
+    "include": "src/",
+    "report-dir": "build/cypress/coverage",
+    "reporter": [
+      "html",
+      "json",
+      "lcov"
+    ]
+  },
+  "scripts": {
+    "build": "next build",
+    "clean": "npm run clean:dist && npm run clean:generated && npm run clean:snapshots",
+    "clean:dist": "rimraf dist",
+    "clean:generated": "rimraf src/generated",
+    "clean:snapshots": "rimraf **/__snapshots__",
+    "cypress:open": "cross-env NODE_OPTIONS=\"-r dotenv/config\" NODE_ENV=test cypress open",
+    "cypress:run": "cross-env NODE_OPTIONS=\"-r dotenv/config\" NODE_ENV=test cypress run",
+    "lint": "npm run lint:prettier && npm run lint:scripts && npm run lint:styles",
+    "lint:fix": "npm run lint:prettier:fix && npm run lint:scripts:fix && npm run lint:styles:fix",
+    "lint:prettier": "prettier --check --loglevel=warn \"src/**/*.(js|jsx|ts|tsx)\"",
+    "lint:prettier:fix": "prettier --write \"src/**/*.(js|jsx|ts|tsx)\"",
+    "lint:scripts": "eslint --ext '.js,.jsx,.ts,.tsx' src",
+    "lint:scripts:fix": "eslint --fix --ext '.js,.jsx,.ts,.tsx' src",
+    "lint:styles": "stylelint \"./(public|src)/**/*.css\"",
+    "lint:styles:fix": "stylelint --fix \"./(public|src)/**/*.css\"",
+    "prebuild": "npm run lint",
+    "prebuild:backup": "npm run lint && npm run test:ci",
+    "prepare": "husky install",
+    "start": "next start",
+    "start:dev": "cross-env NODE_OPTIONS=\"--inspect\" next dev --port 9000",
+    "start:docker": "next -p ${CLIENT_PORT}",
+    "start:ts": "NODE_ENV=production ts-node-dev --project tsconfig.json ./src/index.ts",
+    "test": "npm run test:coverage",
+    "test:ci": "jest --coverage",
+    "test:ci:new": "jest --coverage && codecov --token=XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "test:coverage": "jest --coverage",
+    "test:reports": "jest --coverage && open build/coverage/lcov-report/index.html",
+    "test:update": "jest --detectOpenHandles --onlyChanged --updateSnapshot --watch",
+    "test:updated": "jest --detectOpenHandles --onlyChanged --passWithNoTests",
+    "test:watch": "jest --detectOpenHandles --onlyChanged --watch"
+  },
+  "dependencies": {
+    "@barguide/style-guide": "^2.0.13",
+    "classnames": "^2.3.1",
+    "graphql-request": "^3.6.1",
+    "gsap": "^3.8.0",
+    "isomorphic-fetch": "^3.0.0",
+    "lodash": "^4.17.21",
+    "next": "^12.0.4",
+    "next-pwa": "^5.4.0",
+    "pino": "^7.3.0",
+    "pino-pretty": "^7.2.0",
+    "query-string": "^7.0.1",
+    "react": "^17.0.2",
+    "react-cookie": "^4.1.1",
+    "react-dom": "^17.0.2",
+    "react-intersection-observer": "^8.32.3",
+    "react-tippy": "^1.4.0",
+    "react-toastify": "^8.1.0",
+    "recoil": "^0.5.2",
+    "swiper": "^7.3.0",
+    "ua-parser-js": "^1.0.2"
+  },
+  "devDependencies": {
+    "@barguide/dotfiles": "^1.0.5",
+    "@barguide/icons": "^2.0.13",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@cypress/code-coverage": "^3.9.11",
+    "@next/bundle-analyzer": "^12.0.4",
+    "@testing-library/dom": "^8.11.1",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
+    "@types/gsap": "^3.0.0",
+    "@types/gtag.js": "^0.0.8",
+    "@types/lodash": "^4.14.177",
+    "@types/node": "^16.11.9",
+    "@types/pino": "^7.0.5",
+    "@types/react": "^17.0.36",
+    "@types/ua-parser-js": "^0.7.36",
+    "autoprefixer": "^10.4.0",
+    "babel-jest": "^27.3.1",
+    "babel-plugin-istanbul": "^6.1.1",
+    "codecov": "^3.8.3",
+    "cross-env": "^7.0.3",
+    "cypress": "^9.0.0",
+    "dotenv": "^10.0.0",
+    "graphql-tag": "^2.12.6",
+    "husky": "^7.0.4",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.3.1",
+    "jest-transform-graphql": "^2.1.0",
+    "jsdom": "^18.1.1",
+    "lint-staged": "^12.1.1",
+    "postcss": "^8.3.11",
+    "postcss-normalize": "^10.0.1",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^2.2.19",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.2"
+  }
+}

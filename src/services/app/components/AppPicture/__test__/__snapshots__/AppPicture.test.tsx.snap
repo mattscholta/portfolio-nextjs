@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppPicture no alt text provided: no alt text 1`] = `
+NodeList [
+  <picture>
+    <source
+      srcset="/path/to/image.jpg"
+      type="image/jpeg"
+    />
+    <img
+      alt=""
+      loading="lazy"
+      src="/path/to/image.jpg"
+    />
+  </picture>,
+]
+`;
+
+exports[`AppPicture prefers jpg's over png's: jpg vs. png 1`] = `
+NodeList [
+  <picture>
+    <source
+      srcset="/path/to/image.jpg"
+      type="image/jpeg"
+    />
+    <img
+      alt="Testing alt text, which is optional"
+      loading="lazy"
+      src="/path/to/image.jpg"
+    />
+  </picture>,
+]
+`;
+
+exports[`AppPicture supports jpg's: jpg 1`] = `
+NodeList [
+  <picture>
+    <source
+      srcset="/path/to/image.jpg"
+      type="image/jpeg"
+    />
+    <img
+      alt="Testing alt text, which is optional"
+      loading="lazy"
+      src="/path/to/image.jpg"
+    />
+  </picture>,
+]
+`;
+
+exports[`AppPicture supports png's: png 1`] = `
+NodeList [
+  <picture>
+    <source
+      srcset="/path/to/image.png"
+      type="image/png"
+    />
+    <img
+      alt="Testing alt text, which is optional"
+      loading="lazy"
+      src="/path/to/image.png"
+    />
+  </picture>,
+]
+`;

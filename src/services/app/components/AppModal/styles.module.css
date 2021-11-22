@@ -1,0 +1,70 @@
+.component {
+  background-color: rgba(0, 0, 0, 0.4);
+  bottom: 0;
+  display: flex;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: opacity 200ms ease-out;
+  z-index: 10;
+}
+
+.component.close {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.component.open {
+  opacity: 1;
+}
+
+.content {
+  background-color: theme('colors.white');
+  height: 95vh;
+  margin: auto;
+  padding: theme('spacing.2x');
+  transition: transform 300ms ease-in-out;
+  width: 95vw;
+  z-index: 1;
+}
+
+.close .content {
+  transform: scale(1.3);
+}
+
+.open .content {
+  pointer-events: all;
+  transform: scale(1);
+}
+
+.underlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.token {
+  border: none;
+  height: 350px;
+  resize: none;
+  width: 100%;
+}
+
+@screen lg {
+  .content {
+    height: 80vh;
+    max-width: 1000px;
+    padding: theme('spacing.4x');
+    width: 95vw;
+  }
+
+  .close .content {
+    transform: scale(1.3);
+  }
+}

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About matches snapshot 1`] = `
+NodeList [
+  <main
+    class="ui-main component"
+  >
+    <div
+      class="ui-container-xl u-p-2x"
+    >
+      <h1
+        class="h1"
+      >
+        Matthew Scholta
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe ut magni id deserunt labore dignissimos at quas asperiores ipsum ab quos accusamus praesentium atque magnam recusandae distinctio, tempore voluptatum?
+      </p>
+    </div>
+  </main>,
+]
+`;

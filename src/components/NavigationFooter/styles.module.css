@@ -1,0 +1,25 @@
+.component {
+  background-color: theme('colors.gray.0');
+  border: 1px solid theme('colors.gray.3');
+  color: theme('colors.secondary');
+  font-family: theme('fontFamily.heading');
+  font-size: theme('fontSize.14');
+  height: var(--footer-height);
+  padding: theme('spacing.2x');
+}
+
+.links {
+  display: flex;
+  gap: theme('spacing.2x');
+  justify-content: center;
+}
+
+.link {
+  color: theme('colors.secondary');
+  padding: theme('spacing.1x');
+  text-decoration: none;
+}
+
+.link.active {
+  color: theme('colors.primary');
+}

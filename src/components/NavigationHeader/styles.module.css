@@ -1,0 +1,40 @@
+.component {
+  background-color: theme('colors.secondary');
+  border: none;
+  color: theme('colors.white');
+  height: var(--header-height);
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+.links {
+  height: 100%;
+  overflow: hidden;
+  padding: 0 theme('spacing.2x');
+}
+
+.link {
+  background-color: transparent;
+  color: theme('colors.white');
+  padding: theme('spacing.2x');
+  text-decoration: none;
+  transition: background 140ms ease-out, color 140ms ease-out;
+}
+
+.link:active,
+.link:hover {
+  background-color: theme('colors.primary');
+  color: theme('colors.secondary');
+}
+
+.link.active {
+  background-color: theme('colors.primary');
+  color: theme('colors.secondary');
+  cursor: default;
+  pointer-events: none;
+}
+
+.logo {
+  padding: theme('spacing.2xs') 0;
+}

@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WorkHistory matches snapshot 1`] = `
+NodeList [
+  <div
+    class="component"
+  >
+    <h2
+      class="ui-heading medium"
+    >
+      Work History / Experience
+    </h2>
+    <ul
+      class="workplaces"
+    >
+      <li
+        class="featured"
+      >
+        <h3>
+          <a
+            class="spot-primary"
+            data-ga-label="haldi"
+            href="https://haldi.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Haldi
+          </a>
+           
+          | 
+          Principal Engineer
+        </h3>
+        <em>
+          April 2021 – Present
+        </em>
+      </li>
+      <li
+        class=""
+      >
+        <h3>
+          <a
+            class="spot-primary"
+            data-ga-label="thredup"
+            href="https://www.thredup.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            ThredUP
+          </a>
+           
+          | 
+          Staff Engineer
+        </h3>
+        <em>
+          Feb 2016 – April 2021
+        </em>
+      </li>
+      <li
+        class=""
+      >
+        <h3>
+          <a
+            class="spot-primary"
+            data-ga-label="beyond"
+            href="https://www.bynd.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Beyond
+          </a>
+           
+          | 
+          Technical Team Lead
+        </h3>
+        <em>
+          Nov 2011 – Apr 2015
+        </em>
+      </li>
+    </ul>
+    <p
+      class="more"
+    >
+      * Visit
+       
+      <a
+        class="spot-primary"
+        href="https://www.linkedin.com/in/matthewscholta"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        LinkedIn
+      </a>
+       
+      for more info.
+    </p>
+  </div>,
+]
+`;

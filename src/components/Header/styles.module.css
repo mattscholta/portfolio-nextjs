@@ -1,0 +1,135 @@
+.component :root {
+  --spot-dropshadow: rgba(0, 0, 0, 0.3);
+}
+
+.component {
+  background-color: var(--spot-grey-8);
+  border-bottom: unset;
+  box-shadow: 0 3px var(--grid-1xs) 0 var(--spot-dropshadow);
+  height: var(--header-height);
+  left: 0;
+  min-width: var(--min-width);
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: var(--z-index-structure-navigation);
+}
+
+.nav {
+  margin-top: -1px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.link {
+  color: var(--spot-white);
+  display: inline-block;
+  /* font-size: var(--font-14); */
+  line-height: var(--header-height);
+  padding: 0 var(--grid-2x);
+  position: relative;
+  text-decoration: none;
+  transition: color 140ms ease-out;
+}
+
+.link:after {
+  background-color: var(--spot-white);
+  bottom: -1px;
+  content: '';
+  height: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transition: height 140ms ease-out;
+}
+
+.link:hover:after,
+.selected:after {
+  height: 3px;
+}
+
+.link:hover {
+  color: var(--spot-white);
+  text-decoration: none;
+}
+
+.selected:after {
+  background-color: var(--spot-grey-3);
+}
+
+.logo,
+.svgBrand,
+.svgOctocat {
+  display: inherit;
+}
+
+.logo {
+  margin: 0 var(--grid-2x) 0 var(--grid-3x);
+}
+
+.menu {
+  background: transparent;
+  border: none;
+  display: none;
+}
+
+.selected,
+.selected:hover {
+  color: var(--spot-white);
+  text-decoration: none;
+}
+
+.svgBrand {
+  height: 50px;
+  width: 50px;
+}
+
+.svgOctocat {
+  height: var(--header-height);
+  position: fixed;
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .link {
+    background: none;
+    display: block;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  .menu {
+    cursor: pointer;
+    display: inline-flex;
+    left: 0;
+    padding: var(--grid-2xs);
+    padding: 14px 12px;
+    position: fixed;
+    top: 0;
+  }
+
+  .nav {
+    background-color: var(--spot-grey-7);
+    box-shadow: 0 3px var(--grid-1xs) 0 var(--spot-dropshadow);
+    height: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: var(--header-height);
+    transform: translate3d(0, 0, 0);
+    transition: height 240ms ease-in;
+    width: 100%;
+  }
+
+  .nav.open {
+    height: calc(50px * 4);
+    transition: height 240ms ease-in-out;
+  }
+
+  .link:hover:after,
+  .selected:after {
+    height: 0;
+  }
+}

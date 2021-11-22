@@ -1,0 +1,29 @@
+.component {
+  font-style: italic;
+  font-weight: var(--font-weight-regular);
+  padding: var(--grid-4x) 0;
+}
+
+.component blockquote {
+  margin: var(--grid-8x) auto var(--grid-6x);
+  max-width: 80%;
+}
+
+.component blockquote b,
+.component blockquote em {
+  color: var(--spot-grey-9);
+}
+
+.component hr {
+  margin: var(--grid-2x) 0;
+}
+
+@media (max-width: 768px) {
+  .component {
+    padding: var(--grid-2x) 0;
+  }
+
+  .component blockquote {
+    margin: var(--grid-4x) auto var(--grid-2x);
+  }
+}

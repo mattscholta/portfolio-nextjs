@@ -1,0 +1,32 @@
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: var(--grid-8x);
+}
+
+.image {
+  flex: 1 0;
+  margin: var(--grid-2x);
+}
+
+@media (max-width: 768px) {
+  .images {
+    display: block;
+  }
+
+  .image {
+    margin: 2%;
+    width: 29.33%;
+  }
+}
+
+@media (max-width: 550px) {
+  .images {
+    display: block;
+  }
+
+  .image {
+    width: 46%;
+  }
+}

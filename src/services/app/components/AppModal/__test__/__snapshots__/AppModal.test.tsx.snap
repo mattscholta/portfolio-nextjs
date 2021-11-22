@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppModal matches snapshot 1`] = `
+NodeList [
+  <div
+    class="component close"
+  >
+    <div
+      class="content"
+    >
+      <h2
+        class="u-mb-2x"
+      >
+        App Modal
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fugit nihil nesciunt quibusdam deleniti, adipisci, deserunt et aliquid aspernatur provident consequuntur, optio eaque ut debitis quo enim sequi dolores reiciendis?
+      </p>
+    </div>
+  </div>,
+]
+`;

@@ -1,0 +1,36 @@
+.component {
+  cursor: pointer;
+  position: relative;
+}
+
+.container {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  right: 0;
+  top: 100%;
+  transform: translateX(0%);
+  transition: opacity 140ms ease-in-out;
+  z-index: 2;
+}
+
+.dropdown {
+  background-color: theme('colors.white');
+  border: 1px solid theme('colors.forest');
+  cursor: default;
+  opacity: 1;
+  padding: theme('spacing.2x');
+}
+
+.container.close {
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Only on large screes can it sit in the middle */
+@media (min-width: 1568px) {
+  .container {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}

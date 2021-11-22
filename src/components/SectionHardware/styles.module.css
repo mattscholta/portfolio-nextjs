@@ -1,0 +1,9 @@
+.hardware {
+  column-count: 2;
+}
+
+@media (max-width: 768px) {
+  .hardware {
+    column-count: 1;
+  }
+}

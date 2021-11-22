@@ -1,0 +1,10 @@
+{
+  "coverage": true,
+  "fixturesFolder": "build/cypress/fixtures",
+  "integrationFolder": "build/cypress/e2e",
+  "pluginsFile": "build/cypress/plugins/index.ts",
+  "projectId": "XXXXXX",
+  "screenshotsFolder": "build/cypress/screenshots",
+  "supportFile": "build/cypress/support/index.ts",
+  "videosFolder": "build/cypress/videos"
+}

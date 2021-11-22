@@ -1,0 +1,36 @@
+.component,
+.component h2 {
+  margin-bottom: var(--grid-4x);
+}
+
+.component a {
+  color: var(--spot-grey-8);
+  display: flex;
+  margin-bottom: var(--grid-2x);
+}
+
+.icon {
+  margin-right: var(--grid-2xs);
+}
+
+.links {
+  display: block;
+  flex-wrap: wrap;
+  margin-bottom: var(--grid-2x);
+  text-transform: none;
+}
+
+.links span {
+  margin-left: var(--grid-1xs);
+}
+
+.links a {
+  font-size: 0.9em;
+  padding-left: var(--grid-1xs);
+  transition: padding 120ms ease-in;
+}
+
+.links a:hover {
+  padding-left: var(--grid-2x);
+  text-decoration: none;
+}

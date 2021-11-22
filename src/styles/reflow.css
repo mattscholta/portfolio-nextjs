@@ -1,0 +1,27 @@
+.ui-reflow {
+  display: flex;
+}
+
+/*
+.ui-reflow li {
+  font-size: .9em;
+}
+*/
+
+.ui-spacer {
+  flex: 0 0 var(--grid-8x);
+}
+
+.ui-spacer.small { flex: 0 0 var(--grid-2x); }
+.ui-spacer.medium { flex: 0 0 var(--grid-4x); }
+.ui-spacer.large { flex: 0 0 var(--grid-8x); }
+
+@media (max-width: 768px) {
+  .ui-reflow {
+    flex-direction: column;
+  }
+
+  .ui-spacer {
+    flex-basis: 0;
+  }
+}

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppDropdown matches snapshot 1`] = `
+NodeList [
+  <div
+    class="u-flex u-h-full u-items-stretch u-relative component"
+  >
+    <div
+      class="container close"
+    />
+  </div>,
+]
+`;

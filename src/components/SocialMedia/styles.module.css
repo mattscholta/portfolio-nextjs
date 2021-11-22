@@ -1,0 +1,10 @@
+.component {
+  align-items: center;
+  display: flex;
+  margin: var(--grid-6x) 0 var(--grid-2xs);
+}
+
+.icon {
+  flex: 1 0;
+  text-align: center;
+}

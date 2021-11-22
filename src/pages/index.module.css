@@ -1,0 +1,65 @@
+.component {
+  margin-top: var(--grid-5x);
+}
+
+.component aside {
+  flex: 0 0 400px;
+}
+
+.component section {
+  flex: 1 0 320px;
+}
+
+.component p em {
+  font-weight: bold;
+}
+
+.button {
+  margin: var(--grid-10x) auto var(--grid-3x);
+}
+
+.hero {
+  margin-bottom: var(--grid-4x);
+}
+
+.left {
+  margin-bottom: theme('spacing.8x');
+}
+
+.link {
+  display: block;
+  font-weight: var(--font-weight-bold);
+  margin-left: var(--grid-2x);
+  margin-top: var(--grid-4x);
+  text-align: center;
+  transition: padding 200ms ease-out;
+}
+
+.link:hover {
+  padding-left: var(--grid-1x);
+}
+
+.sidebar {
+  margin-bottom: var(--grid-6x);
+}
+
+@media (max-width: 1024px) {
+  .component {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .left {
+    margin-bottom: theme('spacing.4x');
+  }
+
+  .link {
+    margin-bottom: var(--grid-6x);
+  }
+
+  .sidebar {
+    margin-bottom: var(--grid-4x);
+    margin-top: var(--grid-2x);
+  }
+}

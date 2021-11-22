@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GoogleAnalytics matches snapshot 1`] = `
+NodeList [
+  <script
+    type="text/javascript"
+  >
+    
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'test-id');
+  
+  </script>,
+]
+`;

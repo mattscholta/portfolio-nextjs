@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionProductivity matches snapshot 1`] = `
+NodeList [
+  <section>
+    <h2
+      class="ui-heading"
+    >
+      Productivity
+    </h2>
+    <span
+      class="ui-subhead"
+    />
+    <p>
+      These apps are just useful for navigating the day-to-day. Some of which I am highly satisfied with like Rocket, 1Pass and BetterTouch, and the others are just necessary.
+    </p>
+    <ul
+      style="column-count: 3; text-align: center;"
+    >
+      <li>
+        <a
+          href="https://1password.com"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="🔐 1Password"
+        >
+          🔐 1Password
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://folivora.ai"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="👆 BetterTouch"
+        >
+          👆 BetterTouch
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://matthewpalmer.net/rocket"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="🚀 Rocket App"
+        >
+          🚀 Rocket App
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://slack.com"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="💬 Slack App"
+        >
+          💬 Slack App
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://sparkmailapp.com"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="📧 Spark Email"
+        >
+          📧 Spark Email
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://apps.apple.com/us/app/tweetdeck-by-twitter/id485812721"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="🐦 TweetDeck"
+        >
+          🐦 TweetDeck
+        </a>
+      </li>
+    </ul>
+  </section>,
+]
+`;

@@ -1,0 +1,25 @@
+########################################################################
+# FOLDERS
+########################################################################
+__snapshots__/
+.github/
+.husky/
+build/templates/component/
+public/fonts/
+public/images/
+src/generated/
+
+########################################################################
+# FILES
+########################################################################
+*.env*
+*.ico
+*.jpg
+*.png
+*.svg
+*.txt
+.eslintignore
+.gitignore
+.nvmrc
+.prettierignore
+Dockerfile

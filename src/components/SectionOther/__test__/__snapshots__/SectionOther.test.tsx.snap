@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionOther matches snapshot 1`] = `
+NodeList [
+  <section>
+    <h2
+      class="ui-heading"
+    >
+      Free Time
+    </h2>
+    <span
+      class="ui-subhead"
+    />
+    <p>
+      A true 
+      <b>
+        California native
+      </b>
+       you can find me and the family at the beach! When we're not at the beach there is a good chance I am hauling ass along the coast on my motorcycle 🏍️💨.
+    </p>
+    <div
+      class="images"
+    >
+      <img
+        alt=""
+        class="shadow image"
+        loading="lazy"
+        src="https://s3-us-west-1.amazonaws.com/mattscholta/instagram/04.jpg"
+        width="120"
+      />
+      <img
+        alt=""
+        class="shadow image"
+        loading="lazy"
+        src="https://s3-us-west-1.amazonaws.com/mattscholta/instagram/21.jpg"
+        width="120"
+      />
+      <img
+        alt=""
+        class="shadow image"
+        loading="lazy"
+        src="https://s3-us-west-1.amazonaws.com/mattscholta/instagram/05.jpg"
+        width="120"
+      />
+      <img
+        alt=""
+        class="shadow image"
+        loading="lazy"
+        src="https://s3-us-west-1.amazonaws.com/mattscholta/instagram/22.jpg"
+        width="120"
+      />
+      <img
+        alt=""
+        class="shadow image"
+        loading="lazy"
+        src="https://s3-us-west-1.amazonaws.com/mattscholta/instagram/12.jpg"
+        width="120"
+      />
+      <img
+        alt=""
+        class="shadow image"
+        loading="lazy"
+        src="https://s3-us-west-1.amazonaws.com/mattscholta/instagram/23.jpg"
+        width="120"
+      />
+      <img
+        alt=""
+        class="shadow image"
+        loading="lazy"
+        src="https://s3-us-west-1.amazonaws.com/mattscholta/instagram/13.jpg"
+        width="120"
+      />
+      <img
+        alt=""
+        class="shadow image"
+        loading="lazy"
+        src="https://s3-us-west-1.amazonaws.com/mattscholta/instagram/17.jpg"
+        width="120"
+      />
+      <img
+        alt=""
+        class="shadow image"
+        loading="lazy"
+        src="https://s3-us-west-1.amazonaws.com/mattscholta/instagram/10.jpg"
+        width="120"
+      />
+      <img
+        alt=""
+        class="shadow image"
+        loading="lazy"
+        src="https://s3-us-west-1.amazonaws.com/mattscholta/instagram/06.jpg"
+        width="120"
+      />
+    </div>
+  </section>,
+]
+`;

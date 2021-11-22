@@ -1,0 +1,7 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🏃‍♂️ Test & Lint"
+npx --no-install lint-staged
+
+# npx --debug --no-install --verbose lint-staged

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppErrorComponent renders an error message: rendered 1`] = `
+NodeList [
+  <div
+    class="u-center u-text-center u-block u-mx-auto u-my-4x u-text-14"
+    style="max-width: 300px;"
+  >
+    <h3>
+      Sorry, we've encountered an error.
+    </h3>
+    <p>
+      Sample error message
+    </p>
+    <a
+      href="/"
+    >
+      Go to the Homepage
+    </a>
+    <div
+      class="u-flex u-flex-col u-gap-2x u-text-center u-m-2x"
+    />
+  </div>,
+]
+`;
+
+exports[`AppErrorComponent returns null when there is no message: null 1`] = `NodeList []`;

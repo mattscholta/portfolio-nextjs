@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionHardware matches snapshot 1`] = `
+NodeList [
+  <section>
+    <h2
+      class="ui-heading"
+    >
+      Hardware
+    </h2>
+    <sub
+      class="ui-subhead"
+    />
+    <p>
+      I've been happily developing on a 
+      <b>
+        Mac
+      </b>
+       over the last 
+      <b>
+        10+
+      </b>
+       
+      years. However, I grew up on PC's and built a few rigs over the years for gaming and work. Now days a perk of working in Software our employer often supplies a well equipped box.
+    </p>
+    <div
+      class="u-flex"
+    >
+      <ul
+        class="list-disc u-flex-grow  hardware"
+      >
+        <li>
+          Laptop -
+           
+          <a
+            href="https://support.apple.com/kb/SP776"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            15" MacBook Pro, 2018
+          </a>
+        </li>
+        <li>
+          Monitor -
+           
+          <a
+            href="https://www.amazon.com/gp/product/B074JKT894"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            34" LG Curved Ultra-wide
+          </a>
+        </li>
+        <li>
+          Storage -
+           
+          <a
+            href="https://www.amazon.com/gp/product/B01MRSRQLA"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            TerraMaster RAID Enclosure
+          </a>
+        </li>
+        <li
+          class="nested"
+        >
+          <a
+            href="https://www.amazon.com/gp/product/B01AV1697A"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            2x WD Gold 4TB @7200 RPM
+          </a>
+        </li>
+        <li>
+          Desk -
+           
+          <a
+            href="https://www.amazon.com/gp/product/B07HJJLLML"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Adjustable height Desk
+          </a>
+        </li>
+        <li>
+          Keyboard -
+           
+          <a
+            href="https://www.apple.com/shop/product/MLA22B/A/magic-keyboard-us-english"
+          >
+            Apple Magic Keyboard
+          </a>
+        </li>
+        <li>
+          Music -
+           
+          <a
+            href="https://www.amazon.com/Bose-QuietComfort-Wireless-Headphones-Cancelling/dp/B0756CYWWD"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Bose Headphones
+          </a>
+        </li>
+        <li>
+          Mouse -
+           
+          <a
+            href="https://www.apple.com/shop/product/MLA02LL/A/magic-mouse-2-silver"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Apple Magic Mouse
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>,
+]
+`;

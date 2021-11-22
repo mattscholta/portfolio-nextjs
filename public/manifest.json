@@ -1,0 +1,61 @@
+{
+  "author": "BarGuide.io",
+  "background_color": "#fff",
+  "default_locale": "en",
+  "display": "standalone",
+  "dir": "ltr",
+  "description": "BarGuide.io",
+  "icons": [
+    {
+      "purpose": "maskable",
+      "sizes": "48x48",
+      "src": "/images/icon.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "96x96",
+      "src": "/images/icon.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "144x144",
+      "src": "/images/icon.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "192x192",
+      "src": "/images/icon.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "256x256",
+      "src": "/images/icon.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "384x384",
+      "src": "/images/icon.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "/images/icon.png",
+      "type": "image/png"
+    }
+  ],
+  "lang": "en-US",
+  "manifest_version": 1.0,
+  "name": "2021 BarGuide",
+  "orientation": "portrait",
+  "scope": "/",
+  "short_name": "BarGuide",
+  "start_url": "/",
+  "theme_color": "#555",
+  "version": "1.0"
+}

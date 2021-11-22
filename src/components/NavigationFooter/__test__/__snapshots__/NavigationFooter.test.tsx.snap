@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationFooter matches snapshot 1`] = `
+NodeList [
+  <div
+    class="component"
+  >
+    <div
+      class="ui-container-xl u-text-center"
+    >
+      <div
+        class="links"
+      >
+        <a
+          class="link"
+          href="/"
+        >
+          Home
+        </a>
+        <a
+          class="link"
+          href="/about"
+        >
+          About
+        </a>
+        <a
+          class="link"
+          href="/contact"
+        >
+          Contact
+        </a>
+      </div>
+      <p>
+        © 
+        2021
+         - Built with
+         
+        <span
+          class="u-text-primary"
+        >
+          ♥
+        </span>
+         in San Diego, CA.
+      </p>
+    </div>
+  </div>,
+]
+`;

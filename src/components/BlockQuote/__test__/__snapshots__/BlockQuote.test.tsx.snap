@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlockQuote matches snapshot 1`] = `
+NodeList [
+  <div
+    class="component"
+  >
+    <hr />
+    <blockquote />
+    <hr />
+  </div>,
+]
+`;

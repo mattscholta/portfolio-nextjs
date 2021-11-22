@@ -1,0 +1,38 @@
+#############################################################################
+#
+#   CODECOV: https://docs.codecov.com/docs/codecovyml-reference
+#
+#############################################################################
+codecov:
+  require_ci_to_pass: yes
+
+comment:
+  behavior: default
+  layout: 'reach,diff,flags,files,footer'
+  require_changes: no
+
+coverage:
+  precision: 2
+  range: '70...100'
+  round: down
+  status:
+    # WIP: https://docs.codecov.io/docs/commit-status#patch-status
+    patch: off
+
+    # WIP: https://docs.codecov.com/docs/common-recipe-list#ease-target-coverage
+    project:
+      default:
+        threshold: 5%
+
+ignore:
+  - '**/*.graphql'
+  - '**/*.yml'
+  - 'src/generated/'
+
+parsers:
+  gcov:
+    branch_detection:
+      conditional: yes
+      loop: yes
+      macro: no
+      method: no

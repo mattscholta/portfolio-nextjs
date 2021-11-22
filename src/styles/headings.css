@@ -1,0 +1,63 @@
+/**
+ * Headings
+ */
+.ui-heading {
+  font-size: 1.4em;
+  margin: 0;
+}
+
+.ui-heading.medium {
+  font-size: 1.2em;
+}
+
+.ui-heading.small {
+  font-size: 1em;
+}
+
+/**
+ * Sub Headings
+ */
+.ui-subhead {
+  color: var(--spot-primary);
+  font-family: var(--font-family-primary);
+  font-size: .8em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.ui-subhead.medium {
+  font-size: 1em;
+}
+
+.ui-subhead.small {
+  font-size: .9em;
+}
+
+/**
+ * Shared
+ */
+.ui-heading,
+.ui-subhead {
+  display: block;
+}
+
+.ui-heading + .ui-subhead {
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--grid-2x);
+  position: relative;
+}
+
+.ui-heading + a.ui-subhead:after {
+  content: "\2197";
+  margin-left: var(--grid-1xs);
+  position: relative;
+  transition: translate 140ms ease-out;
+}
+
+.ui-heading + a.ui-subhead:hover {
+  text-decoration: none;
+}
+
+.ui-heading + a.ui-subhead:hover:after {
+  transform: translate(-8px, -8px);
+}

@@ -1,0 +1,17 @@
+.component :root {
+  --spot-dropshadow: rgba(0, 0, 0, 0.3);
+}
+
+.section {
+  margin-bottom: var(--grid-8x);
+}
+
+.section h2 {
+  border-bottom: 1px solid var(--spot-grey-1);
+  margin-bottom: var(--grid-3x);
+  padding-bottom: var(--grid-2x);
+}
+
+.component:global(.shadow) {
+  box-shadow: 0 3px var(--grid-1xs) 0 var(--spot-dropshadow);
+}

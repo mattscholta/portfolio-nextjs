@@ -1,0 +1,96 @@
+/**
+ * MAIN
+ */
+.ui-main {
+  /* min-height: calc(100vh - var(--header-height) - var(--footer-height)); */
+  min-height: calc(100vh - var(--footer-height));
+  padding-top: var(--header-height);
+}
+
+/**
+ * BUTTON
+ */
+.ui-btn {
+  border: 3px solid theme('colors.black');
+  font-size: theme('fontSize.14');
+  height: theme('spacing.6x');
+  min-width: 240px;
+  padding: 10px;
+  position: relative;
+}
+
+/**
+ * CONTAINER
+ */
+.ui-container {
+  margin: auto;
+  max-width: 1280px;
+}
+
+.ui-container-sm,
+.ui-container-md,
+.ui-container-lg,
+.ui-container-xl,
+.ui-container-2xl {
+  margin: 0 auto;
+}
+
+.ui-container-sm {
+  max-width: 640px;
+}
+
+.ui-container-md {
+  max-width: 768px;
+}
+
+.ui-container-lg {
+  max-width: 1024px;
+}
+
+.ui-container-xl {
+  max-width: 1280px;
+}
+
+.ui-container-2xl {
+  max-width: 1536px;
+}
+
+/**
+ * GENERIC LINKS
+ */
+.ui-link {
+  color: theme('colors.primary');
+  text-decoration: none;
+}
+
+.ui-link:hover {
+  text-decoration: underline;
+}
+
+/**
+ * DROP SHADOW
+ */
+.ui-shadow {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/**
+ * DESKTOP / MOBILE (important to come late(r) in this cascade)
+ */
+.ui-desktop {
+  display: none;
+}
+
+.ui-mobile {
+  display: initial;
+}
+
+@screen md {
+  .ui-desktop {
+    display: initial;
+  }
+
+  .ui-mobile {
+    display: none;
+  }
+}

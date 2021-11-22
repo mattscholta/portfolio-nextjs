@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionSoftware matches snapshot 1`] = `
+NodeList [
+  <section>
+    <h2
+      class="ui-heading"
+    >
+      Software
+    </h2>
+    <span
+      class="ui-subhead"
+    />
+    <p>
+      I am actually pleasantly surprised how small this list is... These programs are at the 
+      <b>
+        core
+      </b>
+       of everything I do daily. While we can write code in in VIM or a text editor, life is just better with the right tools.
+    </p>
+    <h3
+      class="ui-heading medium"
+    >
+      <a
+        href="https://code.visualstudio.com/insiders"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Visual Studio Code
+      </a>
+    </h3>
+    <span
+      class="ui-subhead"
+    />
+    <p>
+      Is my editor of choice and 
+      <b>
+        I could not be happier!
+      </b>
+       It 100% does everything I need it to and I am continuously impressed by the improvements I've seen to date.
+    </p>
+    <h3
+      class="ui-heading medium"
+    >
+      <a
+        href="https://iterm2.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Iterm2
+      </a>
+    </h3>
+    <span
+      class="ui-subhead"
+    />
+    <p>
+      As far as terminal users go, I use it heavily every day. iTerm2 is free and full of features I use and many that I don't even know exist. Tabs, split-view, fast and reliable.
+    </p>
+    <h3
+      class="ui-heading medium"
+    >
+      <a
+        href="https://www.docker.com/products/docker-desktop"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Docker Desktop
+      </a>
+    </h3>
+    <span
+      class="ui-subhead"
+    />
+    <p>
+      At the core of the modern development workflow is 🐳 Docker. I can't begin to explain how enjoyable a great docker and docker-compose workflow can be.
+    </p>
+    <h3
+      class="ui-heading medium"
+    >
+      <a
+        href="https://www.figma.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Figma
+      </a>
+       
+      /
+       
+      <a
+        href="https://www.sketch.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Sketch
+      </a>
+    </h3>
+    <span
+      class="ui-subhead"
+    />
+    <p>
+      It's not that often that get to play designer but I do enjoy keeping up with the tools. Figma is available in the browser + app and fast, love it!
+    </p>
+  </section>,
+]
+`;

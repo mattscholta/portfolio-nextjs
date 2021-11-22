@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DevelopmentStack matches snapshot 1`] = `
+NodeList [
+  <div
+    class="component"
+  >
+    <h2
+      class="ui-heading medium"
+    >
+      Technology / Tools
+    </h2>
+    <ul
+      class="ui-list-tags"
+    >
+      <li>
+        Apollo
+      </li>
+      <li>
+        Adobe Creative Suite
+      </li>
+      <li>
+        Agile
+      </li>
+      <li>
+        AWS
+      </li>
+      <li>
+        Babel
+      </li>
+      <li>
+        CSS
+      </li>
+      <li>
+        Docker
+      </li>
+      <li>
+        ElasticSearch
+      </li>
+      <li>
+        Express
+      </li>
+      <li>
+        Figma
+      </li>
+      <li>
+        Google Analytics
+      </li>
+      <li>
+        Google Tag Manger
+      </li>
+      <li>
+        Git / Github
+      </li>
+      <li>
+        GraphQL
+      </li>
+      <li>
+        HTML
+      </li>
+      <li>
+        Javascript
+      </li>
+      <li>
+        JWT
+      </li>
+      <li>
+        Kubernetes
+      </li>
+      <li>
+        Lerna
+      </li>
+      <li>
+        Node.js
+      </li>
+      <li>
+        NoSQL
+      </li>
+      <li>
+        NPM
+      </li>
+      <li>
+        PostCSS
+      </li>
+      <li>
+        React
+      </li>
+      <li>
+        RecoilJS
+      </li>
+      <li>
+        Redux
+      </li>
+      <li>
+        REST
+      </li>
+      <li>
+        Rollup
+      </li>
+      <li>
+        SQL / MySQL
+      </li>
+      <li>
+        Sketch
+      </li>
+      <li>
+        Swarm
+      </li>
+      <li>
+        TypeScript
+      </li>
+      <li>
+        Webpack
+      </li>
+    </ul>
+  </div>,
+]
+`;

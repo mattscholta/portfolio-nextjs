@@ -1,0 +1,26 @@
+/* stylelint-disable declaration-no-important */
+
+.Toastify__toast-container .Toastify__toast--default {
+  background-color: theme('colors.primary');
+  color: theme('colors.gray.8');
+}
+
+.tippy-popper {
+  z-index: 3 !important;
+}
+
+.tippy-popper .tippy-tooltip {
+  background-color: theme('colors.primary');
+}
+
+.tippy-popper .arrow-big {
+  border-color: theme('colors.primary');
+}
+
+.tippy-popper[x-placement^='bottom'] [x-arrow].arrow-big {
+  border-bottom-color: theme('colors.primary');
+}
+
+.tippy-popper[x-placement^='top'] [x-arrow].arrow-big {
+  border-top-color: theme('colors.primary');
+}

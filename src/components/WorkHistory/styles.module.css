@@ -1,0 +1,45 @@
+.component,
+.component h2 {
+  margin-bottom: var(--grid-4x);
+}
+
+.component h5 {
+  margin-bottom: var(--grid-1xs);
+}
+
+.component div {
+  font-size: 0.9em;
+  margin-top: var(--grid-2xs);
+}
+
+.component em {
+  font-size: 0.8em;
+  padding-left: var(--grid-2x);
+}
+
+.component li {
+  border: 1px solid var(--spot-grey-1);
+  margin-bottom: var(--grid-2x);
+  padding: var(--grid-2x);
+}
+
+.component li:global(.featured) {
+  border-left: var(--grid-1x) solid var(--spot-grey-1);
+}
+
+.component li:global(.featured) em {
+  color: var(--spot-primary);
+  font-weight: bold;
+}
+
+.more {
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: right;
+}
+
+.workplaces h3 {
+  font-size: 1em;
+  font-weight: 100;
+  text-transform: none;
+}

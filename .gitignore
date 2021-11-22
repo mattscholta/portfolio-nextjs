@@ -1,0 +1,28 @@
+########################################
+# Files
+########################################
+*.log
+*.map
+.DS_STORE
+.env*
+.generator.config
+public/workbox-*.js
+public/worker.js
+
+########################################
+# Folders
+########################################
+.next/
+.nyc_output/
+.vscode/
+build/coverage/
+build/cypress/coverage/
+build/cypress/screenshots/
+build/cypress/videos/
+dist/
+node_modules/
+
+########################################
+# ! Includes
+########################################
+!.env.default

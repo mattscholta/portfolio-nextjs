@@ -1,0 +1,40 @@
+/**
+ * Application specific variables that we can adjust based on media size
+ */
+:root {
+  /* Global settings */
+  --max-width: 1200px;
+  --min-width: 320px;
+
+  /* Navigation */
+  --header-height: 50px;
+  --footer-height: 60px;
+
+  /* Aliases */
+  --var-input-border: var(--spot-grey-4);
+  --var-input-border-disabled: var(--spot-grey-2);
+
+  /* Screen sizes available as variables */
+  --screen-xs: var(--min-width);
+  --screen-sm: 640px;
+  --screen-md: 768px;
+  --screen-lg: 1024px;
+  --screen-xl: 1280px;
+  --screen-2xl: 1536px;
+}
+
+@screen sm {
+}
+
+@screen md {
+  /* :root { --header-height: 80px; } */
+}
+
+@screen lg {
+}
+
+@screen xl {
+}
+
+@screen 2xl {
+}

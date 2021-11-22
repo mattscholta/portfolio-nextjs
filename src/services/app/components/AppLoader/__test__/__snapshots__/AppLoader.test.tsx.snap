@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppLoader matches snapshot 1`] = `
+NodeList [
+  <div
+    class="u-flex u-items-center u-justify-center u-fixed u-inset-0 component"
+  >
+    <div
+      class="u-flex u-flex-col u-items-center"
+    >
+      <div
+        class="loader"
+      />
+      <p>
+        Loading
+      </p>
+    </div>
+  </div>,
+]
+`;

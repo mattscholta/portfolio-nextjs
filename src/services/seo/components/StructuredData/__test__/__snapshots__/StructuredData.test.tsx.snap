@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StructuredData matches snapshot 1`] = `
+NodeList [
+  <script
+    type="application/ld+json"
+  >
+    {}
+  </script>,
+]
+`;
