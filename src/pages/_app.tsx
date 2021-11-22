@@ -5,6 +5,7 @@ import App from 'next/app';
 import parser from 'ua-parser-js';
 import Cookies from 'universal-cookie';
 
+import { intro } from '@src/config/intro';
 import { IS_BROWSER } from '@src/config/settings';
 import { AppComponent } from '@src/services/app/components/AppComponent';
 
@@ -28,6 +29,11 @@ const Application: React.FC<ApplicationProps> = (props, _context) => {
   // Setup
   const cookieData = new Cookies(cookies);
   const cookieProps = IS_BROWSER ? {} : { cookies: cookieData };
+
+  // Life Cycle
+  React.useEffect(() => {
+    intro();
+  }, []);
 
   return (
     <CookiesProvider {...cookieProps}>
