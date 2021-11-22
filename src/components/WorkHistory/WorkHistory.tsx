@@ -24,16 +24,15 @@ const WorkHistory: React.FC<WorkHistoryProps> = (props) => {
   const css = classnames(styles.component, className);
 
   // Handlers
-  const onClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    const { currentTarget } = event;
-    const { gaLabel } = currentTarget.dataset;
-
+  const onClick = (_event: React.MouseEvent<HTMLAnchorElement>) => {
+    // const { currentTarget } = event;
+    // const { gaLabel } = currentTarget.dataset;
     // analytics.event('work-history', 'click', gaLabel);
   };
 
   // Markup
   const renderWorkplace = (node: ExperienceInstance) => {
-    const { date, description, featured, link, name, role } = node;
+    const { date, featured, link, name, role } = node;
     const cssWorkplace = classnames({ featured });
 
     return (

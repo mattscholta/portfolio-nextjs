@@ -19,8 +19,8 @@ export interface HeaderProps {
  * @name Header
  * @description Primary Navigation Header
  */
-const Header: React.FC<HeaderProps> = (props) => {
-  const { navigation, navigationToggle } = props;
+const Header: React.FC<HeaderProps> = (_props) => {
+  // const { navigation, navigationToggle } = props;
 
   // Hooks
   const [isOpen, setIsOpen] = React.useState(false);
@@ -40,13 +40,13 @@ const Header: React.FC<HeaderProps> = (props) => {
     analytics.event('nav-header', 'click', page);
   };
 
-  const onNavLinkClick = (page: any) => () => {
-    // onNavLinkClick(page);
-    analytics.event('nav-header', 'click', page);
+  // const onNavLinkClick = (page: any) => () => {
+  //   // onNavLinkClick(page);
+  //   analytics.event('nav-header', 'click', page);
 
-    if (navigation.open) navigationToggle();
-    if (isOpen) onToggleNav();
-  };
+  //   if (navigation.open) navigationToggle();
+  //   if (isOpen) onToggleNav();
+  // };
 
   // Markup
   const renderLink = (node: any) => {

@@ -1,5 +1,5 @@
 .component :root {
-  --spot-dropshadow: rgba(0, 0, 0, 0.3);
+  --spot-dropshadow: rgba(0 0 0 / 30%);
 }
 
 .component {
@@ -24,7 +24,6 @@
 .link {
   color: var(--spot-white);
   display: inline-block;
-  /* font-size: var(--font-14); */
   line-height: var(--header-height);
   padding: 0 var(--grid-2x);
   position: relative;

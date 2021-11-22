@@ -4,8 +4,8 @@ import { MutableSnapshot, RecoilRoot } from 'recoil';
 
 import { Footer } from '@src/components/Footer/Footer';
 import { Header } from '@src/components/Header/Header';
-import { NavigationFooter } from '@src/components/NavigationFooter';
-import { NavigationHeader } from '@src/components/NavigationHeader';
+// import { NavigationFooter } from '@src/components/NavigationFooter';
+// import { NavigationHeader } from '@src/components/NavigationHeader';
 import { appAtom, AppState } from '@src/recoil/atoms/app';
 import { AppHead } from '@src/services/app/components/AppHead';
 import { AppLifeCycle } from '@src/services/app/components/AppLifeCycle';

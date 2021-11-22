@@ -20,7 +20,7 @@ export interface BlogPreviewColumnProps {
  */
 const BlogPreviewColumn: React.FC<BlogPreviewColumnProps> = (props) => {
   const { className, post, small } = props;
-  const { content, date, slug, sticky, title } = post;
+  const { slug, sticky, title } = post;
 
   // Setup
   // const copy = content?.substr(4);

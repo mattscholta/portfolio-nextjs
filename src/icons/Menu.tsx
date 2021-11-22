@@ -1,7 +1,3 @@
-/* global SVG */
-
-import 'svgjs';
-
 import * as React from 'react';
 import { color } from '@barguide/style-guide';
 
@@ -50,16 +46,16 @@ class IconList extends React.Component<IconListProps, IconListState> {
     });
   };
 
-  public componentDidMount() {
-    if ('SVG' in window) {
-      this.svg = window.SVG.adopt(this.node.current);
-    } else {
-      this.svg = this.node.current;
-    }
-  }
+  // public componentDidMount() {
+  //   if ('SVG' in window) {
+  //     this.svg = window.SVG.adopt(this.node.current);
+  //   } else {
+  //     this.svg = this.node.current;
+  //   }
+  // }
 
   public render() {
-    const { className, fill, height = 50, width = 50, ...rest } = this.props;
+    const { className, height = 50, width = 50, ...rest } = this.props;
 
     // Setup
     const barHeight = height / 8;

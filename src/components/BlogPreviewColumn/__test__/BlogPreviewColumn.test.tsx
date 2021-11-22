@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { MemoryRouter } from 'react-router';
 import { render, RenderResult } from '@testing-library/react';
 
 import {
@@ -11,22 +10,18 @@ describe('BlogPreviewColumn', () => {
   let props: BlogPreviewColumnProps;
   let wrapper: RenderResult;
 
-  const createWrapper = () => (
-    <MemoryRouter>
-      <BlogPreviewColumn {...props} />
-    </MemoryRouter>
-  );
+  const createWrapper = () => <BlogPreviewColumn {...props} />;
 
   beforeEach(() => {
     props = {
       className: '',
 
       post: {
+        URL: '',
         __typename: 'BlogPost',
+        content: '',
         date: '',
         excerpt: '',
-        URL: '',
-        content: '',
         featured_image: '',
         modified: '',
         post_thumbnail: {

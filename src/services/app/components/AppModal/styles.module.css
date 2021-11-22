@@ -1,5 +1,5 @@
 .component {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0 0 0 / 40%);
   bottom: 0;
   display: flex;
   left: 0;
@@ -39,7 +39,7 @@
 }
 
 .underlay {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0 0 0 / 40%);
   bottom: 0;
   cursor: pointer;
   left: 0;

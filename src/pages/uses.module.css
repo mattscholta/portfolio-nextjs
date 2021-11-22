@@ -1,5 +1,5 @@
 .component :root {
-  --spot-dropshadow: rgba(0, 0, 0, 0.3);
+  --spot-dropshadow: rgba(0 0 0 / 30%);
 }
 
 .section {

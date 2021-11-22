@@ -20,7 +20,7 @@
 .ui-subhead {
   color: var(--spot-primary);
   font-family: var(--font-family-primary);
-  font-size: .8em;
+  font-size: 0.8em;
   margin: 0;
   text-transform: uppercase;
 }
@@ -30,7 +30,7 @@
 }
 
 .ui-subhead.small {
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 /**
@@ -48,7 +48,7 @@
 }
 
 .ui-heading + a.ui-subhead:after {
-  content: "\2197";
+  content: '\2197';
   margin-left: var(--grid-1xs);
   position: relative;
   transition: translate 140ms ease-out;
