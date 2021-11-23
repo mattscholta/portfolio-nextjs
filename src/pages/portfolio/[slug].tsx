@@ -19,16 +19,22 @@ interface SlugProps {
  */
 const Slug: React.FC<SlugProps> = (props) => {
   const { data } = props;
-
   console.log(` 💬 ~ data`, data);
 
+  // Setup
+  const image = data.images[0]?.url ?? {};
+  const style = { backgroundImage: `url(${image})` };
+
   // Styles
+  const tailwind = `u-flex u-flex-center u-flex-justify-center`;
   const cssComponent = classnames('ui-main', styles.component);
+  const cssHeading = classnames('ui-heading', styles.heading);
+  const cssImage = classnames('image-featured', tailwind, styles.image);
 
   // 🔌 Short Circuit
   if (!data) {
     return (
-      <div className="ui-container-xl ui-main u-mt-4x">No data found...</div>
+      <div className="ui-container-lg ui-main u-mt-4x">No data found...</div>
     );
   }
 
@@ -41,8 +47,13 @@ const Slug: React.FC<SlugProps> = (props) => {
       </Head>
 
       <main className={cssComponent}>
-        <div className="ui-container-xl u-p-2x">
-          <h1 className={styles.h1}>{data.title}</h1>
+        {image && <div className={cssImage} style={style} />}
+        <div className="ui-container-lg u-p-2x">
+          <blockquote>
+            {data.intro}
+            <cite>- {data.company}</cite>
+          </blockquote>
+          <h1 className={cssHeading}>{data.title}</h1>
           <div
             className="wysiwyg"
             dangerouslySetInnerHTML={{ __html: data.content.html }}
@@ -58,8 +69,11 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   const QUERY = gql`
     {
       portfolios (where: { slug: "${params.slug}" }) {
+        company
         content { html }
         id
+        images { url }
+        intro
         slug
         title
       }

@@ -2,13 +2,14 @@ import * as React from 'react';
 import classnames from 'classnames';
 import Link from 'next/link';
 
-import { PortfolioPreview } from '@src/data/portfolio';
-
 import styles from './styles.module.css';
 
 export interface PreviewCardProps {
   className?: string;
-  data: PortfolioPreview;
+  description: string;
+  image: string;
+  slug: string;
+  title: string;
 }
 
 /**
@@ -17,8 +18,7 @@ export interface PreviewCardProps {
  * @description Preview cards that use a CSS flip to reveal a bit more data
  */
 const PreviewCard: React.FC<PreviewCardProps> = (props) => {
-  const { className, data } = props;
-  const { description, image, slug, title } = data;
+  const { className, description, image, slug, title } = props;
 
   // Styles
   const css = classnames(styles.card, className);

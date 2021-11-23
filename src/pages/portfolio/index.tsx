@@ -12,7 +12,7 @@ import { graphcms } from '@src/utils/graphcms';
 import styles from './index.module.css';
 
 interface IndexProps {
-  portfolios: any[];
+  data: any[];
 }
 
 /**
@@ -20,8 +20,8 @@ interface IndexProps {
  * @description Application landing page (homepage)
  */
 const Index: React.FC<IndexProps> = (props) => {
-  const { portfolios } = props;
-  console.log(` 💬 ~ portfolios`, portfolios);
+  const { data } = props;
+  console.log(` 💬 ~ data`, data);
 
   // Styles
   const cssComponent = classnames('ui-container-xl ui-main', styles.component);
@@ -29,9 +29,17 @@ const Index: React.FC<IndexProps> = (props) => {
 
   // Markup
   const renderPreview = (node: any) => {
-    const { slug } = node;
+    const { overview, slug, thumbnailTemp, title } = node;
 
-    return <PreviewCard data={node} key={slug} />;
+    return (
+      <PreviewCard
+        description={overview}
+        image={thumbnailTemp}
+        key={slug}
+        slug={slug}
+        title={title}
+      />
+    );
   };
 
   return (
@@ -42,7 +50,7 @@ const Index: React.FC<IndexProps> = (props) => {
 
       <div className={cssComponent}>
         <h1 className="u-visually-hidden">ListV2</h1>
-        <div className={cssCards}>{portfolio.map(renderPreview)}</div>
+        <div className={cssCards}>{data.map(renderPreview)}</div>
       </div>
     </>
   );
@@ -52,7 +60,10 @@ export const getServerSideProps: GetServerSideProps = async (_context) => {
   const QUERY = gql`
     {
       portfolios {
-        id
+        overview
+        slug
+        title
+        thumbnailTemp
       }
     }
   `;
@@ -61,7 +72,7 @@ export const getServerSideProps: GetServerSideProps = async (_context) => {
   const { portfolios } = query;
 
   return {
-    props: { portfolios }
+    props: { data: portfolios }
   };
 };
 

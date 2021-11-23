@@ -29,7 +29,7 @@ const data: PortfolioPreview[] = [
   {
     description: `Implementation of LernaJS, "A tool for managing JavaScript projects with multiple packages".`,
     image: `${CLIENT_CLOUDINARY}/v1614502421/mattscholta/thumbnails/webp/monorepo.webp`,
-    slug: 'npm-monorepo',
+    slug: 'monorepo',
     title: 'NPM Monorepo'
   },
   {
