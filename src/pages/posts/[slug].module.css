@@ -1,11 +1,15 @@
 .component {
 }
 
-.h1 {
-  margin-bottom: 1rem;
+.heading {
+  margin-bottom: theme('spacing.6x');
+  margin-top: theme('spacing.6x');
 }
 
-.h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+.image {
+  margin: 0;
+}
+
+.sidebar {
+  max-width: 300px;
 }

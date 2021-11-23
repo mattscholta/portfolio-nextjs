@@ -1,20 +1,38 @@
 import * as React from 'react';
 import classnames from 'classnames';
+import { gql } from 'graphql-request';
+import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 
+import { PreviewCard } from '@src/components/PreviewCard';
 import { SITE_TITLE } from '@src/config/constants';
+import { data as portfolio } from '@src/data/portfolio';
+import { graphcms } from '@src/utils/graphcms';
 
 import styles from './index.module.css';
 
-interface IndexProps {}
+interface IndexProps {
+  portfolios: any[];
+}
 
 /**
  * @name Index
  * @description Application landing page (homepage)
  */
-const Index: React.FC<IndexProps> = (_props) => {
+const Index: React.FC<IndexProps> = (props) => {
+  const { portfolios } = props;
+  console.log(` 💬 ~ portfolios`, portfolios);
+
   // Styles
-  const cssComponent = classnames('ui-main', styles.component);
+  const cssComponent = classnames('ui-container-xl ui-main', styles.component);
+  const cssCards = classnames('u-flex u-flex-wrap', styles.cards);
+
+  // Markup
+  const renderPreview = (node: any) => {
+    const { slug } = node;
+
+    return <PreviewCard data={node} key={slug} />;
+  };
 
   return (
     <>
@@ -22,19 +40,29 @@ const Index: React.FC<IndexProps> = (_props) => {
         <title>Index | {SITE_TITLE}</title>
       </Head>
 
-      <main className={cssComponent}>
-        <div className="ui-container-xl u-p-2x">
-          <h1 className={styles.h1}>Index</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe
-            ut magni id deserunt labore dignissimos at quas asperiores ipsum ab
-            quos accusamus praesentium atque magnam recusandae distinctio,
-            tempore voluptatum?
-          </p>
-        </div>
-      </main>
+      <div className={cssComponent}>
+        <h1 className="u-visually-hidden">ListV2</h1>
+        <div className={cssCards}>{portfolio.map(renderPreview)}</div>
+      </div>
     </>
   );
+};
+
+export const getServerSideProps: GetServerSideProps = async (_context) => {
+  const QUERY = gql`
+    {
+      portfolios {
+        id
+      }
+    }
+  `;
+
+  const query = await graphcms.request(QUERY);
+  const { portfolios } = query;
+
+  return {
+    props: { portfolios }
+  };
 };
 
 export { Index as default, Index };

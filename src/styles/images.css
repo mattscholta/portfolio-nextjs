@@ -1,0 +1,22 @@
+.image-featured {
+  /* background-attachment: fixed; */
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  border-bottom: 1px solid var(--spot-grey-1);
+  height: max(50vh, 500px);
+  overflow: hidden;
+}
+
+.image-featured img {
+  /* height: calc(100vw / 3); */
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .image-featured {
+    background-position: left center;
+    height: min(40vh, 300px);
+  }
+}

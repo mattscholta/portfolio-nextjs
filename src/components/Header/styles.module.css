@@ -9,6 +9,7 @@
   height: var(--header-height);
   left: 0;
   min-width: var(--min-width);
+  padding: 0 theme('spacing.2x');
   position: fixed;
   right: 0;
   top: 0;
@@ -16,7 +17,6 @@
 }
 
 .nav {
-  margin-top: -1px;
   overflow: auto;
   white-space: nowrap;
 }
@@ -24,6 +24,7 @@
 .link {
   color: var(--spot-white);
   display: inline-block;
+  font-size: theme('fontSize.14');
   line-height: var(--header-height);
   padding: 0 var(--grid-2x);
   position: relative;
@@ -32,8 +33,10 @@
 }
 
 .link:after {
-  background-color: var(--spot-white);
-  bottom: -1px;
+  background-color: var(--spot-grey-3);
+  bottom: 0px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
   content: '';
   height: 0;
   left: 0;
@@ -53,7 +56,7 @@
 }
 
 .active:after {
-  background-color: var(--spot-grey-3);
+  background-color: var(--spot-white);
 }
 
 .logo,

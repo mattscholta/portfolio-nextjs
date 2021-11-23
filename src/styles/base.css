@@ -54,6 +54,11 @@ textarea {
   padding: theme('spacing.2x');
 }
 
-blockquote {
+blockquote,
+blockquote cite {
   font-weight: normal;
+}
+
+blockquote cite {
+  font-size: 0.7em;
 }

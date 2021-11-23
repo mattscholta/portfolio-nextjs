@@ -20,21 +20,20 @@ interface IndexProps {
  */
 const Index: React.FC<IndexProps> = (props) => {
   const { posts } = props;
-  console.log(` 💬 ~ props`, props);
 
   // Styles
   const cssComponent = classnames('ui-main', styles.component);
   const cssHeading = classnames('u-visually-hidden', styles.heading);
+  const cssPreviews = classnames('u-flex u-flex-wrap', styles.previews);
 
   // Markup
-  const renderPreview = (post: any, index: number) => {
+  const renderPreview = (post: any) => {
     const { slug } = post;
-    const key = `${slug}-${index}`;
 
     return (
       <BlogPreviewColumn
         className={styles.preview}
-        key={key}
+        key={slug}
         post={post}
         small={false}
       />
@@ -48,25 +47,14 @@ const Index: React.FC<IndexProps> = (props) => {
       </Head>
 
       <main className={cssComponent}>
-        <div className="ui-container-xl u-p-2x">
+        <div className="ui-container-xl">
           <h1 className={cssHeading}>A Developers Ramblings</h1>
-
           <blockquote>
             Always leave the <span className="u-line-through">campground</span>{' '}
             <b>code</b> cleaner than you found it. 🏕️
             <cite>A Developers Ramblings</cite>
           </blockquote>
-
-          <section className="u-flex u-flex-wrap">
-            {posts.map(renderPreview)}
-          </section>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe
-            ut magni id deserunt labore dignissimos at quas asperiores ipsum ab
-            quos accusamus praesentium atque magnam recusandae distinctio,
-            tempore voluptatum?
-          </p>
+          <section className={cssPreviews}>{posts.map(renderPreview)}</section>
         </div>
       </main>
     </>
@@ -81,9 +69,6 @@ export const getServerSideProps: GetServerSideProps = async (_context) => {
         imageTemp
         slug
         title
-        # content {
-        #   html
-        # }
       }
     }
   `;
@@ -92,9 +77,7 @@ export const getServerSideProps: GetServerSideProps = async (_context) => {
   const { posts } = query;
 
   return {
-    props: {
-      posts
-    }
+    props: { posts }
   };
 };
 

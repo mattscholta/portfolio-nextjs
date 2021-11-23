@@ -1,11 +1,7 @@
 .component {
 }
 
-.h1 {
-  margin-bottom: 1rem;
-}
-
-.h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+.cards {
+  justify-content: space-evenly;
+  margin-top: var(--grid-4x);
 }

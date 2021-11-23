@@ -33,7 +33,7 @@ const Index: React.FC<IndexProps> = (_props) => {
       <div className="ui-container-md page">
         <h1 className="u-visually-hidden">Uses...</h1>
 
-        <BlockQuote className="container medium" simple={true}>
+        <BlockQuote className="ui-container-md u-mt-8x" simple={true}>
           Check out {linkUses} for more pages from other developers around the
           world.
         </BlockQuote>

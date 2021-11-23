@@ -1,0 +1,75 @@
+.card {
+  background-color: transparent;
+  cursor: pointer;
+  height: 200px;
+  margin-bottom: var(--grid-4x);
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  width: 300px;
+}
+
+.inner {
+  height: 100%;
+  position: relative;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 360ms ease-in;
+  width: 100%;
+}
+
+.card:hover .inner {
+  transform: rotateX(-180deg);
+}
+
+.back,
+.front {
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.back {
+  background-color: var(--spot-white);
+  border-radius: var(--grid-1x);
+  color: var(--spot-grey-7);
+  padding: 0 var(--grid-2x);
+  transform: rotateX(-180deg);
+}
+
+.front {
+  background-color: var(--spot-white);
+}
+
+.link {
+  color: var(--spot-primary);
+  font-size: var(--font-14);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--grid-2xs);
+  text-align: right;
+}
+
+.back a {
+  align-items: stretch;
+  height: 100%;
+  justify-content: center;
+}
+
+.back h2 {
+  font-weight: var(--font-weight-bold);
+  margin-top: 24px;
+  text-align: left;
+}
+
+.card p {
+  font-size: 0.9em;
+  line-height: 1.2;
+  margin-top: var(--grid-2x);
+  text-align: left;
+}
+
+.card a,
+.card a:hover {
+  color: var(--spot-grey-7);
+  text-decoration: none;
+}

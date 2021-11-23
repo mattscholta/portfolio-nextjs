@@ -68,7 +68,7 @@ const Header: React.FC<HeaderProps> = (_props) => {
 
   return (
     <div className={styles.component}>
-      <div className="ui-container u-flex">
+      <div className="ui-container-xl u-flex">
         <button
           className={styles.menu}
           onClick={onToggleNav}
@@ -77,11 +77,11 @@ const Header: React.FC<HeaderProps> = (_props) => {
         >
           <Hamburger fill={color.white} height={20} width={20} />
         </button>
-        {/*
         <Link href="/">
-          <Logo className={styles.svgBrand} fill={color.white} />
+          <a className="u-mr-2x">
+            <Logo className={styles.svgBrand} fill={color.white} />
+          </a>
         </Link>
-        */}
         <nav className={cssNav}>{data.map(renderLink)}</nav>
         <a
           href="https://www.github.com/visormatt"

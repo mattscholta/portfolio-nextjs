@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PreviewCard matches snapshot 1`] = `
+NodeList [
+  <div
+    class="card"
+  >
+    <div
+      class="inner"
+    >
+      <div
+        class="front"
+      >
+        <img
+          alt="test-title"
+          height="200"
+          loading="eager"
+          src="test-image"
+          title="test-title"
+          width="300"
+        />
+      </div>
+      <div
+        class="back"
+      >
+        <a
+          class="u-flex u-flex-column"
+          href="/portfolio/test-slug"
+        >
+          <h2
+            class="ui-heading medium"
+          >
+            test-title
+          </h2>
+          <p
+            class="u-flex-grow --u-overflow-ellipsis"
+          >
+            test-description
+          </p>
+          <div
+            class="link"
+          >
+            Read More »
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>,
+]
+`;

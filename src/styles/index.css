@@ -21,8 +21,10 @@
 @import './base.css';
 @import './browser.css';
 @import './headings.css';
+@import './images.css';
 @import './list.css';
 @import './reflow.css';
 @import './ui.css';
 @import './variables.css';
 @import './vendor.css';
+@import './wysiwyg.css';

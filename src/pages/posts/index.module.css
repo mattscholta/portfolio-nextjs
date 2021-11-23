@@ -1,10 +1,30 @@
 .component {
 }
 
-.heading {
+.previews {
+  gap: theme('spacing.2x');
 }
 
-.h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+.preview {
+  flex: 1 0;
+  margin: 0 0 theme('spacing.4x');
+  max-width: unset;
+  padding: 0;
+  width: unset;
+}
+
+@screen md {
+  .previews {
+    padding: theme('spacing.2x');
+  }
+
+  .preview {
+    max-width: 50%;
+  }
+}
+
+@screen lg {
+  .preview {
+    max-width: 33.33%;
+  }
 }

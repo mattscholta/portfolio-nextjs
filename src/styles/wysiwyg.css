@@ -1,0 +1,64 @@
+/**
+ * This provides a narrow(er) scope for the customization of
+ * the classes used by WordPress
+ */
+.wysiwyg {
+  font-size: 1em;
+}
+
+.wysiwyg h1,
+.wysiwyg h2 {
+  font-size: 1.4em;
+  margin-bottom: var(--grid-4x);
+}
+
+.wysiwyg h3,
+.wysiwyg h4 {
+  color: var(--spot-grey-8);
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: var(--grid-6x) 0 var(--grid-2x);
+  text-transform: uppercase;
+}
+
+.wysiwyg h5,
+.wysiwyg h6 {
+  font-size: 1em;
+}
+
+.wysiwyg section {
+  margin-bottom: var(--grid-4x);
+}
+
+.wysiwyg ol,
+.wysiwyg ul {
+  margin-bottom: var(--grid-2x);
+}
+
+.wysiwyg .wp-block-group__inner-container {
+  width: 100%;
+}
+
+.wysiwyg .wp-block-group {
+  display: flex;
+  margin: var(--grid-4x) auto;
+}
+
+.wysiwyg .wp-block-columns {
+  display: flex;
+}
+
+.wysiwyg .wp-block-column {
+  flex: 1 0;
+}
+
+.wysiwyg ul {
+  list-style-type: decimal;
+  margin-left: var(--grid-1x);
+}
+
+.wysiwyg ul ul {
+  list-style-type: disc;
+  margin-bottom: 0;
+  margin-left: var(--grid-2x);
+}

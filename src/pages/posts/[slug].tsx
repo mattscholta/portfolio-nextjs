@@ -3,7 +3,6 @@ import classnames from 'classnames';
 import { gql } from 'graphql-request';
 import { GetServerSideProps } from 'next';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 
 import { SITE_TITLE } from '@src/config/constants';
 import { graphcms } from '@src/utils/graphcms';
@@ -21,14 +20,15 @@ interface SlugProps {
 const Slug: React.FC<SlugProps> = (props) => {
   const { post } = props;
 
-  // Hooks
-  const { query } = useRouter();
-
   // Setup
   const image = post.images[0].url;
+  const style = { backgroundImage: `url(${image})` };
 
   // Styles
+  const tailwind = `u-flex u-flex-center u-flex-justify-center`;
   const cssComponent = classnames('ui-main', styles.component);
+  const cssHeading = classnames('ui-heading', styles.heading);
+  const cssImage = classnames('image-featured', tailwind, styles.image);
 
   // 🔌 Short Circuit
   if (!post) return null;
@@ -36,20 +36,24 @@ const Slug: React.FC<SlugProps> = (props) => {
   return (
     <>
       <Head>
-        <title>Slug | {SITE_TITLE}</title>
+        <title>
+          {post.title} | {SITE_TITLE}
+        </title>
       </Head>
 
       <main className={cssComponent}>
-        {image && <img alt="" src={image} />}
+        {image && <div className={cssImage} style={style} />}
         <div className="ui-container-xl u-p-2x">
-          <h1 className={styles.h1}>{query.slug}</h1>
-          <div dangerouslySetInnerHTML={{ __html: post.content.html }} />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe
-            ut magni id deserunt labore dignissimos at quas asperiores ipsum ab
-            quos accusamus praesentium atque magnam recusandae distinctio,
-            tempore voluptatum?
-          </p>
+          <h1 className={cssHeading}>{post.title}</h1>
+          <div className="u-flex u-gap-10x">
+            <div
+              className="wysiwyg"
+              dangerouslySetInnerHTML={{ __html: post.content.html }}
+            />
+            <aside className={styles.sidebar}>
+              <img alt="" src={post.imageTemp} />
+            </aside>
+          </div>
         </div>
       </main>
     </>
@@ -64,6 +68,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         content { html }
         createdAt
         images { url }
+        imageTemp
         title
         updatedAt
       }
@@ -74,9 +79,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   const { post } = query;
 
   return {
-    props: {
-      post
-    }
+    props: { post }
   };
 };
 
