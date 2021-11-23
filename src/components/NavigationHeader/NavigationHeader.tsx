@@ -35,9 +35,11 @@ const NavigationHeader: React.FC<NavigationHeaderProps> = (props) => {
   return (
     <div className={cssComponent}>
       <nav className={cssLinks}>
+        {/*
         <Link href="/">
           <Logo className={styles.logo} fill={color.white} />
         </Link>
+        */}
         <Link href="/">
           <a className={cssAbout}>About</a>
         </Link>

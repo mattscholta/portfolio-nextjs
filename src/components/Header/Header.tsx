@@ -2,6 +2,7 @@ import * as React from 'react';
 import { color } from '@barguide/style-guide';
 import classnames from 'classnames';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import { Logo } from '@src/components/Logo';
 import { data } from '@src/data/header';
@@ -24,6 +25,7 @@ const Header: React.FC<HeaderProps> = (_props) => {
 
   // Hooks
   const [isOpen, setIsOpen] = React.useState(false);
+  const { pathname } = useRouter();
 
   // Styles
   const cssNav = classnames(styles.nav, {
@@ -53,9 +55,13 @@ const Header: React.FC<HeaderProps> = (_props) => {
     const { children, href } = node;
     const key = `nav-primary-${children}`;
 
+    const cssLink = classnames(styles.link, {
+      [styles.active]: href === pathname
+    });
+
     return (
       <Link href={href} key={key}>
-        <a className={styles.link}>{children}</a>
+        <a className={cssLink}>{children}</a>
       </Link>
     );
   };
@@ -71,9 +77,11 @@ const Header: React.FC<HeaderProps> = (_props) => {
         >
           <Hamburger fill={color.white} height={20} width={20} />
         </button>
+        {/*
         <Link href="/">
           <Logo className={styles.svgBrand} fill={color.white} />
         </Link>
+        */}
         <nav className={cssNav}>{data.map(renderLink)}</nav>
         <a
           href="https://www.github.com/visormatt"

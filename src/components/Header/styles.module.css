@@ -43,7 +43,7 @@
 }
 
 .link:hover:after,
-.selected:after {
+.active:after {
   height: 3px;
 }
 
@@ -52,7 +52,7 @@
   text-decoration: none;
 }
 
-.selected:after {
+.active:after {
   background-color: var(--spot-grey-3);
 }
 
@@ -72,8 +72,8 @@
   display: none;
 }
 
-.selected,
-.selected:hover {
+.active,
+.active:hover {
   color: var(--spot-white);
   text-decoration: none;
 }
@@ -128,7 +128,7 @@
   }
 
   .link:hover:after,
-  .selected:after {
+  .active:after {
     height: 0;
   }
 }

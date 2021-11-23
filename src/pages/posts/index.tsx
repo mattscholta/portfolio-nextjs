@@ -1,6 +1,7 @@
 import * as React from 'react';
 import classnames from 'classnames';
 import { gql } from 'graphql-request';
+import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 
 import { BlogPreviewColumn } from '@src/components/BlogPreviewColumn';
@@ -51,7 +52,8 @@ const Index: React.FC<IndexProps> = (props) => {
           <h1 className={cssHeading}>A Developers Ramblings</h1>
 
           <blockquote>
-            Always leave the campground code cleaner than you found it. 🏕️
+            Always leave the <span className="u-line-through">campground</span>{' '}
+            <b>code</b> cleaner than you found it. 🏕️
             <cite>A Developers Ramblings</cite>
           </blockquote>
 
@@ -71,20 +73,21 @@ const Index: React.FC<IndexProps> = (props) => {
   );
 };
 
-const QUERY = gql`
-  {
-    posts {
-      id
-      imageTemp
-      title
-      # content {
-      #   html
-      # }
+export const getServerSideProps: GetServerSideProps = async (_context) => {
+  const QUERY = gql`
+    {
+      posts {
+        id
+        imageTemp
+        slug
+        title
+        # content {
+        #   html
+        # }
+      }
     }
-  }
-`;
+  `;
 
-export async function getStaticProps() {
   const query = await graphcms.request(QUERY);
   const { posts } = query;
 
@@ -93,7 +96,7 @@ export async function getStaticProps() {
       posts
     }
   };
-}
+};
 
 export { Index as default, Index };
 export type { IndexProps };
