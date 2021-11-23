@@ -1,0 +1,47 @@
+.component {
+  color: var(--spot-grey-8);
+  flex: 0 0 400px;
+  margin: 0 0 var(--grid-4x);
+  min-width: 320px;
+  /* padding: var(--gri d-2x) 0; */
+}
+
+.component:hover {
+  text-decoration: none;
+}
+
+.link {
+  color: var(--spot-primary);
+  display: block;
+  font-size: 0.8em;
+  transition: color 200ms ease-out;
+}
+
+.component:hover .link {
+  color: var(--spot-primary);
+}
+
+.component h2 {
+  color: var(--spot-grey-7);
+  font-size: 1em;
+  margin-bottom: var(--grid-1xs);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.component svg {
+  margin-right: var(--grid-1x);
+}
+
+.details {
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image {
+  height: auto;
+  margin-right: var(--grid-2x);
+  max-width: 100px;
+  text-transform: uppercase;
+}

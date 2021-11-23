@@ -57,14 +57,8 @@ const Index: React.FC<IndexProps> = (props) => {
                 width={1500}
               />
 
-              <br />
-              <br />
-              <br />
-
               <h2 className="ui-heading">Opportunity awaits 🧑‍💻</h2>
               <sub className="ui-subhead" />
-
-              <br />
 
               <p>
                 After <b>5+ great</b> years pushing the envelope at{' '}

@@ -41,7 +41,7 @@
 }
 
 .heading {
-  align-items: center;
+  margin-bottom: var(--grid-1x);
 }
 
 .heading:hover {
@@ -65,5 +65,4 @@
   color: var(--spot-primary);
   float: right;
   font-size: 0.8em;
-  text-align: end;
 }

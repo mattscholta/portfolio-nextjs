@@ -50,12 +50,18 @@ const Index: React.FC<IndexProps> = (props) => {
         <div className="ui-container-xl">
           <h1 className={cssHeading}>A Developers Ramblings</h1>
           <br />
-          <blockquote>
+          <blockquote className="u-px-2x">
             Always leave the <span className="u-line-through">campground</span>{' '}
             <b>code</b> cleaner than you found it. 🏕️
             <cite>A Developers Ramblings</cite>
           </blockquote>
-          <section className={cssPreviews}>{posts.map(renderPreview)}</section>
+
+          <aside className={cssPreviews}>
+            {posts.map(renderPreview)}
+            {/* <BlogDisclaimer /> */}
+            {/* {related && related.map(renderRelatedPosts)} */}
+            {/* <BlogSharing /> */}
+          </aside>
         </div>
       </main>
     </>
@@ -68,6 +74,7 @@ export const getServerSideProps: GetServerSideProps = async (_context) => {
       posts {
         id
         imageTemp
+        sticky
         slug
         title
       }

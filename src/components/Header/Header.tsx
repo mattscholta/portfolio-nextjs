@@ -55,8 +55,11 @@ const Header: React.FC<HeaderProps> = (_props) => {
     const { children, href } = node;
     const key = `nav-primary-${children}`;
 
+    const isHome = pathname === '/' && href === '/';
+    const isOther = !isHome && href !== '/' && pathname.startsWith(href);
+
     const cssLink = classnames(styles.link, {
-      [styles.active]: href === pathname
+      [styles.active]: isHome || isOther
     });
 
     return (

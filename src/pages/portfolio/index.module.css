@@ -3,5 +3,10 @@
 
 .cards {
   justify-content: space-evenly;
-  margin-top: var(--grid-4x);
+}
+
+@screen lg {
+  .cards {
+    margin-top: var(--grid-10x);
+  }
 }

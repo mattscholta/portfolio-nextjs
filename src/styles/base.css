@@ -54,13 +54,29 @@ textarea {
   padding: theme('spacing.2x');
 }
 
+blockquote {
+  font-size: 16px;
+}
+
 blockquote,
 blockquote cite {
   font-weight: normal;
 }
 
 blockquote cite {
-  font-size: 0.7em;
+  font-size: 0.9em;
+}
+
+@screen md {
+  blockquote {
+    font-size: 20px;
+  }
+}
+
+@screen lg {
+  blockquote {
+    font-size: 24px;
+  }
 }
 
 hr {

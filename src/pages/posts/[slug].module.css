@@ -1,15 +1,31 @@
 .component {
 }
 
+.content {
+  margin: var(--grid-4x) auto;
+}
+
+.component aside {
+}
+
+.sidebar {
+  /* padding-top: var(--grid-4x); */
+  /* max-width: 300px; */
+}
+
 .heading {
   margin-bottom: theme('spacing.6x');
   margin-top: theme('spacing.6x');
 }
 
 .image {
+  background-position: bottom;
+  background-size: cover;
   margin: 0;
 }
 
-.sidebar {
-  max-width: 300px;
+.post {
+  margin: 0 0 var(--grid-2x);
+  padding-left: 0;
+  padding-right: 0;
 }

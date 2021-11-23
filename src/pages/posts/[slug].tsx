@@ -4,6 +4,7 @@ import { gql } from 'graphql-request';
 import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 
+import { BlogPreviewRow } from '@src/components/BlogPreviewRow/BlogPreviewRow';
 import { SITE_TITLE } from '@src/config/constants';
 import { graphcms } from '@src/utils/graphcms';
 
@@ -18,7 +19,7 @@ interface SlugProps {
  * @description Application landing page (homepage)
  */
 const Slug: React.FC<SlugProps> = (props) => {
-  const { post } = props;
+  const { post, related } = props;
 
   // Setup
   const image = post.images[0].url;
@@ -29,6 +30,15 @@ const Slug: React.FC<SlugProps> = (props) => {
   const cssComponent = classnames('ui-main', styles.component);
   const cssHeading = classnames('ui-heading', styles.heading);
   const cssImage = classnames('image-featured', tailwind, styles.image);
+
+  const renderRelatedPosts = (post: any) => (
+    <BlogPreviewRow
+      className={styles.post}
+      key={post.slug}
+      post={post}
+      small={true}
+    />
+  );
 
   // 🔌 Short Circuit
   if (!post) return null;
@@ -45,13 +55,13 @@ const Slug: React.FC<SlugProps> = (props) => {
         {image && <div className={cssImage} style={style} />}
         <div className="ui-container-xl u-p-2x">
           <h1 className={cssHeading}>{post.title}</h1>
-          <div className="u-flex u-gap-10x">
+          <div className="u-flex u-flex-col u-gap-4x md:u-gap-10x md:u-flex-row">
             <div
               className="wysiwyg"
               dangerouslySetInnerHTML={{ __html: post.content.html }}
             />
             <aside className={styles.sidebar}>
-              <img alt="" src={post.imageTemp} />
+              {related.map(renderRelatedPosts)}
             </aside>
           </div>
         </div>
@@ -72,14 +82,25 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         title
         updatedAt
       }
+
+      posts(where: { sticky: true }) {
+        images { url }
+        slug
+        sticky
+        title
+      }
     }
   `;
 
   const query = await graphcms.request(QUERY);
-  const { post } = query;
+  const { post, posts } = query;
+  console.log(` 💬 ~ post`, post);
 
   return {
-    props: { post }
+    props: {
+      post,
+      related: posts
+    }
   };
 };
 

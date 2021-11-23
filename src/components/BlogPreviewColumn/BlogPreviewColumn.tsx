@@ -56,8 +56,8 @@ const BlogPreviewColumn: React.FC<BlogPreviewColumnProps> = (props) => {
             {sticky && <Star fill={color.gray[7]} height={16} width={16} />}
             <h2>{title}</h2>
           </div>
-          <br />
-          {!small && copy && <p>{copy}</p>}
+          {/* <br /> */}
+          {/* {!small && copy && <p>{copy}</p>} */}
         </div>
         <span className={styles.link}>Read More &#xbb;</span>
       </a>

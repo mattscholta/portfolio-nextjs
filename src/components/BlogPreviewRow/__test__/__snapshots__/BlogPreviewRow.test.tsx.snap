@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogPreviewRow matches snapshot 1`] = `
+NodeList [
+  <a
+    class="u-flex component"
+    data-ga-label=""
+    href="/posts/"
+  >
+    <div
+      class="u-flex u-flex-column u-flex-grow details"
+    >
+      <h2>
+        
+      </h2>
+      <span
+        class="link"
+      >
+        Read More »
+      </span>
+    </div>
+  </a>,
+]
+`;
