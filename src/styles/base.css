@@ -62,3 +62,37 @@ blockquote cite {
 blockquote cite {
   font-size: 0.7em;
 }
+
+hr {
+  border: none;
+  border-bottom: 1px solid var(--spot-grey-1);
+  margin: var(--grid-8x) 0;
+}
+
+hr.small {
+  margin: var(--grid-2x) 0;
+}
+
+hr.medium {
+  margin: var(--grid-4x) 0;
+}
+
+hr.large {
+  margin: var(--grid-6x) 0;
+}
+
+@media (max-width: 768px) {
+  hr {
+    margin: var(--grid-4x) 0;
+  }
+
+  .portfolio {
+    margin-top: var(--grid-5x);
+  }
+}
+
+@media (max-width: 414px) {
+  hr {
+    margin: var(--grid-2x) 0;
+  }
+}

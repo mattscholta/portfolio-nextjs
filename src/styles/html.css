@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  scrollbar-color: theme('colors.primary') theme('colors.gray.0');
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  cursor: pointer;
+  width: var(--grid-1x);
+}
+
+::-webkit-scrollbar-track {
+  background: theme('colors.gray.0');
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: theme('colors.primary');
+  border: 2px solid theme('colors.white');
+  border-radius: var(--grid-1xs);
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  background: theme('colors.primary');
+  color: theme('colors.white');
+}
+
+::selection {
+  background: theme('colors.primary');
+  color: theme('colors.white');
+}
+
+html {
+  min-width: var(--min-width);
+}
+
+body {
+  /* overflow-y: scroll; */
+
+  scrollbar-gutter: stable both;
+}

@@ -6,7 +6,6 @@ import Head from 'next/head';
 
 import { PreviewCard } from '@src/components/PreviewCard';
 import { SITE_TITLE } from '@src/config/constants';
-import { data as portfolio } from '@src/data/portfolio';
 import { graphcms } from '@src/utils/graphcms';
 
 import styles from './index.module.css';

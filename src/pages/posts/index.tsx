@@ -49,6 +49,7 @@ const Index: React.FC<IndexProps> = (props) => {
       <main className={cssComponent}>
         <div className="ui-container-xl">
           <h1 className={cssHeading}>A Developers Ramblings</h1>
+          <br />
           <blockquote>
             Always leave the <span className="u-line-through">campground</span>{' '}
             <b>code</b> cleaner than you found it. 🏕️

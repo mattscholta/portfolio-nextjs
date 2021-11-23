@@ -1,7 +1,7 @@
 .component {
   background-color: var(--spot-grey-8);
   display: flex;
-  font-size: var(--font-12);
+  font-family: theme('fontFamily.heading');
   height: var(--footer-height);
   padding-bottom: 0;
   padding-bottom: constant(safe-area-inset-top, 0);
@@ -14,6 +14,7 @@
 .copy {
   color: var(--spot-grey-7);
   display: inline;
+  font-size: theme('fontSize.12');
   left: 50%;
   position: absolute;
   text-transform: none;

@@ -20,8 +20,8 @@ const Footer: React.FC<FooterProps> = (_props) => {
   return (
     <div className={css}>
       <div className={cssCopy}>
-        Made with <span className="spot-primary">&hearts;</span> in San Diego,
-        CA.
+        Made with <span className="spot-primary u-mx-1xs">&hearts;</span> in San
+        Diego, CA.
       </div>
       <SocialMedia
         className={styles.social}

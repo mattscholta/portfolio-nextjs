@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { color } from '@barguide/style-guide';
 
-import { name } from '@root/package.json';
+import pkg from '@root/package.json';
 import { Icon } from '@src/types/icon';
 
 export interface LogoProps extends Icon {}
@@ -21,7 +21,7 @@ const Logo: React.FC<LogoProps> = (props) => {
       width={width}
       viewBox="0 0 100 59"
     >
-      <title>{name}</title>
+      <title>{pkg.name}</title>
       {/* <desc>{pkg.description}</desc> */}
       <g fill="none" fillRule="evenodd" stroke="none" strokeWidth="1">
         <path

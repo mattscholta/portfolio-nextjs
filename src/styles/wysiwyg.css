@@ -33,6 +33,7 @@
 .wysiwyg ol,
 .wysiwyg ul {
   margin-bottom: var(--grid-2x);
+  padding-left: 2em;
 }
 
 .wysiwyg .wp-block-group__inner-container {

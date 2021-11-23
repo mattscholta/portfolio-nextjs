@@ -23,7 +23,10 @@ const Slug: React.FC<SlugProps> = (props) => {
 
   // Setup
   const image = data.images[0]?.url ?? {};
-  const style = { backgroundImage: `url(${image})` };
+  const style = {
+    backgroundImage: `url(${image})`,
+    backgroundPosition: 'center'
+  };
 
   // Styles
   const tailwind = `u-flex u-flex-center u-flex-justify-center`;
@@ -58,6 +61,7 @@ const Slug: React.FC<SlugProps> = (props) => {
             className="wysiwyg"
             dangerouslySetInnerHTML={{ __html: data.content.html }}
           />
+          <hr />
         </div>
       </main>
     </>
