@@ -17,8 +17,11 @@ NodeList [
     <ul
       style="column-count: 3; text-align: center;"
     >
-      <li>
+      <li
+        class="u-py-2x"
+      >
         <a
+          class="u-text-24"
           href="https://1password.com"
           rel="noopener noreferrer"
           target="_blank"
@@ -27,8 +30,11 @@ NodeList [
           🔐 1Password
         </a>
       </li>
-      <li>
+      <li
+        class="u-py-2x"
+      >
         <a
+          class="u-text-24"
           href="https://folivora.ai"
           rel="noopener noreferrer"
           target="_blank"
@@ -37,8 +43,11 @@ NodeList [
           👆 BetterTouch
         </a>
       </li>
-      <li>
+      <li
+        class="u-py-2x"
+      >
         <a
+          class="u-text-24"
           href="https://matthewpalmer.net/rocket"
           rel="noopener noreferrer"
           target="_blank"
@@ -47,8 +56,11 @@ NodeList [
           🚀 Rocket App
         </a>
       </li>
-      <li>
+      <li
+        class="u-py-2x"
+      >
         <a
+          class="u-text-24"
           href="https://slack.com"
           rel="noopener noreferrer"
           target="_blank"
@@ -57,8 +69,11 @@ NodeList [
           💬 Slack App
         </a>
       </li>
-      <li>
+      <li
+        class="u-py-2x"
+      >
         <a
+          class="u-text-24"
           href="https://sparkmailapp.com"
           rel="noopener noreferrer"
           target="_blank"
@@ -67,8 +82,11 @@ NodeList [
           📧 Spark Email
         </a>
       </li>
-      <li>
+      <li
+        class="u-py-2x"
+      >
         <a
+          class="u-text-24"
           href="https://apps.apple.com/us/app/tweetdeck-by-twitter/id485812721"
           rel="noopener noreferrer"
           target="_blank"

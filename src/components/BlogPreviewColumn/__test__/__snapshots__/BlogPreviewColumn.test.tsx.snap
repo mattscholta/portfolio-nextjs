@@ -5,8 +5,15 @@ NodeList [
   <a
     class="component"
     data-ga-label=""
-    href="/posts/"
+    href="/posts"
   >
+    <img
+      alt=""
+      class="image"
+      height="1250"
+      loading="lazy"
+      width="1880"
+    />
     <div
       class="u-flex-grow"
     >
