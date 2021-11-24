@@ -7,11 +7,18 @@
 body {
   color: theme('colors.black');
   font-family: theme('fontFamily.copy');
+  font-size: theme('fontSize.14');
   font-weight: normal;
-  line-height: 1.6;
+  line-height: 1.4;
   margin: 0;
   min-width: var(--min-width);
   padding: 0;
+}
+
+@screen md {
+  body {
+    font-size: theme('fontSize.16');
+  }
 }
 
 a {
@@ -38,6 +45,7 @@ h6 {
 }
 
 p {
+  line-height: 1.6;
   margin: 0 0 1.4rem;
   padding: 0;
 }
@@ -56,10 +64,6 @@ textarea {
 
 blockquote {
   font-size: 16px;
-}
-
-blockquote,
-blockquote cite {
   font-weight: normal;
 }
 
@@ -70,6 +74,10 @@ blockquote cite {
 @screen md {
   blockquote {
     font-size: 20px;
+  }
+
+  blockquote cite {
+    font-size: 0.8em;
   }
 }
 

@@ -1,6 +1,19 @@
-import { Github, LinkedIn, Twitter } from '@src/icons';
+import { Github, LinkedIn, StackOverflow, Twitter } from '@src/icons';
+import { Icon } from '@src/types/icon';
 
-const data: any[] = [
+interface Data extends Partial<HTMLAnchorElement> {
+  icon: React.FC<Icon>;
+  label: string;
+}
+
+// const data: Partial<HTMLAnchorElement>[] = [
+const data: Data[] = [
+  {
+    href: 'https://github.com/visormatt',
+    icon: Github,
+    label: 'github',
+    title: 'Find me on Github'
+  },
   {
     href: 'https://www.linkedin.com/in/matthewscholta',
     icon: LinkedIn,
@@ -8,17 +21,11 @@ const data: any[] = [
     title: 'Connect on LinkedIn'
   },
   {
-    href: 'https://github.com/visormatt',
-    icon: Github,
-    label: 'github',
-    title: 'Find me on Github'
+    href: 'https://stackoverflow.com/story/visormatt',
+    icon: StackOverflow,
+    label: 'stack-overflow',
+    title: 'As required on StackOverflow'
   },
-  // {
-  //   icon: StackOverflow,
-  //   href: 'https://stackoverflow.com/story/visormatt',
-  //   label: 'stack-overflow',
-  //   title: 'As required on StackOverflow'
-  // },
   {
     href: 'https://twitter.com/visormatt',
     icon: Twitter,
@@ -28,3 +35,4 @@ const data: any[] = [
 ];
 
 export { data };
+export type { Data };

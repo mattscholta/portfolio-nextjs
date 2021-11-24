@@ -3,7 +3,7 @@ import { color as colors } from '@barguide/style-guide';
 import classnames from 'classnames';
 
 import { analytics } from '@src/utils/analytics';
-import { data } from './data';
+import { Data, data } from './data';
 
 import styles from './styles.module.css';
 
@@ -32,7 +32,7 @@ const SocialMedia: React.FC<SocialMediaProps> = (props) => {
   };
 
   // Markup
-  const renderLink = (link: any) => {
+  const renderLink = (link: Data) => {
     const { href, icon, label, title } = link;
     const Icon = icon;
 

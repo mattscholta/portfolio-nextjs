@@ -18,7 +18,7 @@
   left: 50%;
   position: absolute;
   text-transform: none;
-  top: -18px;
+  top: -15px;
   transform: translateX(-50%);
   white-space: nowrap;
 }
