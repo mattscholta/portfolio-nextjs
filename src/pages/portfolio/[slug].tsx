@@ -4,6 +4,7 @@ import { gql } from 'graphql-request';
 import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 
+import { BlockQuote } from '@src/components/BlockQuote/BlockQuote';
 import { SITE_TITLE } from '@src/config/constants';
 import { graphcms } from '@src/utils/graphcms';
 
@@ -56,10 +57,10 @@ const Slug: React.FC<SlugProps> = (props) => {
       <main className={cssComponent}>
         {image && <div className={cssImage} style={style} />}
         <div className="ui-container-lg u-p-2x">
-          <blockquote>
+          <BlockQuote className="u-mt-2x" simple={true}>
             {data.intro}
             <cite>- {data.company}</cite>
-          </blockquote>
+          </BlockQuote>
           <h1 className={cssHeading}>{data.title}</h1>
           <div
             className="wysiwyg"

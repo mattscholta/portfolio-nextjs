@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+// import { BlockQuote } from '@src/components/BlockQuote';
+
 export interface SectionSoftwareProps {
   className?: string;
 }
@@ -26,10 +28,10 @@ const SectionSoftware: React.FC<SectionSoftwareProps> = (props) => {
       </p>
 
       {/*
-      <blockquote style={{ margin: '40px auto', width: '80%' }}>
+      <BlockQuote>
         Give me six hours to chop down a tree and I will spend the first four
         sharpening the ax.
-      </blockquote>
+      </BlockQuote>
       */}
 
       <h3 className="ui-heading medium">

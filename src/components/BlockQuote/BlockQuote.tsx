@@ -16,10 +16,10 @@ const BlockQuote: React.FC<BlockQuoteProps> = (props) => {
   const { children, className, simple = false } = props;
 
   // Styles
-  const css = classnames(styles.component, className);
+  const cssComponent = classnames(styles.component, className);
 
   return (
-    <div className={css}>
+    <div className={cssComponent}>
       {!simple && <hr />}
       <blockquote>{children}</blockquote>
       {!simple && <hr />}
