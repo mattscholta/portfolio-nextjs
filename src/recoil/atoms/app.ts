@@ -2,12 +2,16 @@ import { atom } from 'recoil';
 
 export interface AppState {
   loading: boolean;
-  // user: any;
+  navigation: {
+    open: boolean;
+  };
 }
 
 export const appDefault: AppState = {
-  loading: false
-  // user: {}
+  loading: false,
+  navigation: {
+    open: false
+  }
 };
 
 /**

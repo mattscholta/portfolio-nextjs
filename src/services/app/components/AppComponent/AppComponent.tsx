@@ -1,12 +1,9 @@
 import * as React from 'react';
 import { ToastContainer } from 'react-toastify';
-import { MutableSnapshot, RecoilRoot } from 'recoil';
+import { RecoilRoot } from 'recoil';
 
 import { Footer } from '@src/components/Footer/Footer';
 import { Header } from '@src/components/Header/Header';
-// import { NavigationFooter } from '@src/components/NavigationFooter';
-// import { NavigationHeader } from '@src/components/NavigationHeader';
-import { appAtom, AppState } from '@src/recoil/atoms/app';
 import { AppHead } from '@src/services/app/components/AppHead';
 import { AppLifeCycle } from '@src/services/app/components/AppLifeCycle';
 
@@ -22,29 +19,29 @@ interface AppComponentProps {
  * as props to our page components.
  */
 const AppComponent: React.FC<AppComponentProps> = (props) => {
-  const { children, global } = props;
+  const { children, global: _global } = props;
 
   // Setup
-  const initialState: AppState = { ...global, loading: false };
+  // const initialState: AppState = {
+  //   ...global,
+  //   loading: false,
+  //   navigation: {
+  //     open: true
+  //   }
+  // };
 
-  function initializeState({ set }: MutableSnapshot) {
-    set(appAtom, initialState);
-  }
+  // function initializeState({ set }: MutableSnapshot) {
+  //   set(appAtom, initialState);
+  // }
 
   return (
-    <RecoilRoot initializeState={initializeState}>
+    <RecoilRoot>
+      {/* <RecoilRoot initializeState={initializeState}> */}
       <AppHead />
       <AppLifeCycle />
-      {/* <NavigationHeader /> */}
-      <Header
-        navigation={{}}
-        navigationToggle={() => {
-          console.log('asfdasfd');
-        }}
-      />
+      <Header />
       {children}
       <Footer />
-      {/* <NavigationFooter /> */}
       <ToastContainer />
     </RecoilRoot>
   );

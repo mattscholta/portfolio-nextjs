@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { render, RenderResult } from '@testing-library/react';
+import { RecoilRoot } from 'recoil';
 
 import { Header, HeaderProps } from '../Header';
 
@@ -21,10 +22,15 @@ describe('Header', () => {
   let props: HeaderProps;
   let wrapper: RenderResult;
 
-  const createWrapper = () => <Header {...props} />;
+  const createWrapper = () => (
+    <RecoilRoot>
+      <Header {...props} />
+    </RecoilRoot>
+  );
 
   beforeEach(() => {
     props = {
+      asdf: 'asdf',
       navigation: {
         open: false
       },

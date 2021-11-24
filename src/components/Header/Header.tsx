@@ -3,52 +3,44 @@ import { color } from '@barguide/style-guide';
 import classnames from 'classnames';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useRecoilState } from 'recoil';
 
 import { Logo } from '@src/components/Logo';
 import { data } from '@src/data/header';
 import { Hamburger, Octocat } from '@src/icons';
+import { appAtom } from '@src/recoil/atoms/app';
 import { analytics } from '@src/utils/analytics';
 
 import styles from './styles.module.css';
 
-export interface HeaderProps {
-  navigation: any;
-  navigationToggle: any;
-}
+export interface HeaderProps {}
 
 /**
  * @name Header
  * @description Primary Navigation Header
  */
 const Header: React.FC<HeaderProps> = (_props) => {
-  // const { navigation, navigationToggle } = props;
-
   // Hooks
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [app, setApp] = useRecoilState(appAtom);
+  const { navigation } = app;
   const { pathname } = useRouter();
+
+  // Setup
+  const isOpen = navigation.open;
 
   // Styles
   const cssNav = classnames(styles.nav, {
-    // [styles.open]: navigation.open
     [styles.open]: isOpen
   });
 
   // Markup
   const onToggleNav = () => {
-    setIsOpen(!isOpen);
+    setApp({ ...app, navigation: { ...navigation, open: !isOpen } });
   };
 
   const onTrackEvent = (page: any) => () => {
     analytics.event('nav-header', 'click', page);
   };
-
-  // const onNavLinkClick = (page: any) => () => {
-  //   // onNavLinkClick(page);
-  //   analytics.event('nav-header', 'click', page);
-
-  //   if (navigation.open) navigationToggle();
-  //   if (isOpen) onToggleNav();
-  // };
 
   // Markup
   const renderLink = (node: any) => {
@@ -64,7 +56,9 @@ const Header: React.FC<HeaderProps> = (_props) => {
 
     return (
       <Link href={href} key={key}>
-        <a className={cssLink}>{children}</a>
+        <a className={cssLink} onClick={onToggleNav}>
+          {children}
+        </a>
       </Link>
     );
   };

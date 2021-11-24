@@ -5,7 +5,6 @@ import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 
 import { BlogPreviewColumn } from '@src/components/BlogPreviewColumn';
-import { SITE_TITLE } from '@src/config/constants';
 import { graphcms } from '@src/utils/graphcms';
 
 import styles from './index.module.css';
