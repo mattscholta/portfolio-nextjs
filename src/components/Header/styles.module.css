@@ -117,7 +117,7 @@
     box-shadow: 0 3px var(--grid-1xs) 0 var(--spot-dropshadow);
     height: 0;
     left: 0;
-    opacity: 0%;
+    opacity: 0;
     overflow: hidden;
     position: absolute;
     top: var(--header-height);
@@ -129,7 +129,7 @@
   .nav.open {
     /* height: calc(50px * 4); */
     height: calc(100vh - var(--header-height));
-    opacity: 100%;
+    opacity: 1;
     transition: height 240ms ease-in-out;
   }
 
