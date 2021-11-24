@@ -5,8 +5,8 @@ import { metadata } from '../index';
 describe('seo: metadata', () => {
   let tags: React.MetaHTMLAttributes<HTMLMetaElement>[];
 
-  it('24 "metadata" tags', () => {
-    expect(metadata.length).toBe(24);
+  it('23 "metadata" tags', () => {
+    expect(metadata.length).toBe(23);
   });
 
   it('3 "apple" tags', () => {
@@ -31,12 +31,12 @@ describe('seo: metadata', () => {
     expect(tags.length).toBe(5);
   });
 
-  it('6 "twitter" tags', () => {
+  it('5 "twitter" tags', () => {
     tags = metadata.filter((metaTag) =>
       metaTag.property?.startsWith('twitter:')
     );
 
-    expect(tags.length).toBe(6);
+    expect(tags.length).toBe(5);
   });
 
   it('1 "viewport" tags', () => {

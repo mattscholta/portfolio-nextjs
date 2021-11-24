@@ -1,3 +1,8 @@
+import {
+  SITE_AUTHOR,
+  SITE_DESCRIPTION,
+  SITE_TITLE
+} from '@src/config/constants';
 import { CLIENT_BASE_URL } from '@src/config/settings';
 
 /**
@@ -5,11 +10,11 @@ import { CLIENT_BASE_URL } from '@src/config/settings';
  * @description This is the base SEO structure
  */
 const defaults = {
-  author: 'BarGuide.io',
-  description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus consequuntur magnam modi earum. Doloribus culpa, facilis dolor veritatis quae labore accusamus placeat beatae ipsa officia laboriosam rem, necessitatibus harum? Cupiditate.`,
-  image: `${CLIENT_BASE_URL}/images/jpg/shareable-v2.jpg`,
+  author: SITE_AUTHOR,
+  description: SITE_DESCRIPTION,
+  image: `${CLIENT_BASE_URL}/images/share.jpg`,
   robots: 'index, follow',
-  title: `BarGuide - The premiere resource for an adult beverage.`
+  title: SITE_TITLE
 };
 
 export { defaults };

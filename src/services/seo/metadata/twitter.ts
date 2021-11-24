@@ -8,7 +8,7 @@ const getTwitterMeta = (
     property: 'twitter:card' // summary | summary_large_image
   },
   {
-    content: `@barguideio`,
+    content: `@visormatt`,
     property: 'twitter:creator'
   },
   {
@@ -19,10 +19,10 @@ const getTwitterMeta = (
     content: data.image,
     property: 'twitter:image'
   },
-  {
-    content: `@barguideio`,
-    property: 'twitter:site'
-  },
+  // {
+  //   content: `@visormatt`,
+  //   property: 'twitter:site'
+  // },
   {
     content: data.title,
     property: 'twitter:title'
