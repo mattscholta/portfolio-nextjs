@@ -20,7 +20,6 @@ interface IndexProps {
  */
 const Index: React.FC<IndexProps> = (props) => {
   const { data } = props;
-  console.log(` 💬 ~ data`, data);
 
   // Styles
   const cssComponent = classnames('ui-container-xl ui-main', styles.component);

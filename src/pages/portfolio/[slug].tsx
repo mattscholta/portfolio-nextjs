@@ -19,7 +19,6 @@ interface SlugProps {
  */
 const Slug: React.FC<SlugProps> = (props) => {
   const { data } = props;
-  console.log(` 💬 ~ data`, data);
 
   // Setup
   const image = data.images[0]?.url ?? {};
