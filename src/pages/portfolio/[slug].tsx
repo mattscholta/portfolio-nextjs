@@ -2,13 +2,10 @@ import * as React from 'react';
 import classnames from 'classnames';
 import { gql } from 'graphql-request';
 import { GetServerSideProps } from 'next';
-import app from 'next/app';
 import Head from 'next/head';
-import { useRecoilState, useRecoilValue } from 'recoil';
 
 import { BlockQuote } from '@src/components/BlockQuote';
 import { SITE_TITLE } from '@src/config/constants';
-import { appAtom } from '@src/recoil/atoms/app';
 import { graphcms } from '@src/utils/graphcms';
 
 import styles from './[slug].module.css';
