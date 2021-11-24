@@ -1,6 +1,4 @@
-import { LinkProps } from 'next/link';
-
-const data: LinkProps[] = [
+const data: any[] = [
   {
     children: 'About',
     href: '/'
