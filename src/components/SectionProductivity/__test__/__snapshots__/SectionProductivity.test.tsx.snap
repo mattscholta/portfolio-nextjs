@@ -56,45 +56,6 @@ NodeList [
           🚀 Rocket App
         </a>
       </li>
-      <li
-        class="u-py-2x"
-      >
-        <a
-          class="u-text-24"
-          href="https://slack.com"
-          rel="noopener noreferrer"
-          target="_blank"
-          title="💬 Slack App"
-        >
-          💬 Slack App
-        </a>
-      </li>
-      <li
-        class="u-py-2x"
-      >
-        <a
-          class="u-text-24"
-          href="https://sparkmailapp.com"
-          rel="noopener noreferrer"
-          target="_blank"
-          title="📧 Spark Email"
-        >
-          📧 Spark Email
-        </a>
-      </li>
-      <li
-        class="u-py-2x"
-      >
-        <a
-          class="u-text-24"
-          href="https://apps.apple.com/us/app/tweetdeck-by-twitter/id485812721"
-          rel="noopener noreferrer"
-          target="_blank"
-          title="🐦 TweetDeck"
-        >
-          🐦 TweetDeck
-        </a>
-      </li>
     </ul>
   </section>,
 ]

@@ -34,7 +34,7 @@ const SectionSoftware: React.FC<SectionSoftwareProps> = (props) => {
 
       <h3 className="ui-heading medium">
         <a {...propsLink} href="https://code.visualstudio.com/insiders">
-          Visual Studio Code
+          🧰 Visual Studio Code
         </a>
       </h3>
       <span className="ui-subhead" />
@@ -46,7 +46,7 @@ const SectionSoftware: React.FC<SectionSoftwareProps> = (props) => {
 
       <h3 className="ui-heading medium">
         <a {...propsLink} href="https://iterm2.com">
-          Iterm2
+          <b className="u-text-black">$</b> Iterm2
         </a>
       </h3>
       <span className="ui-subhead" />
@@ -58,7 +58,7 @@ const SectionSoftware: React.FC<SectionSoftwareProps> = (props) => {
 
       <h3 className="ui-heading medium">
         <a {...propsLink} href="https://www.docker.com/products/docker-desktop">
-          Docker Desktop
+          🐳 Docker Desktop
         </a>
       </h3>
       <span className="ui-subhead" />
@@ -70,11 +70,11 @@ const SectionSoftware: React.FC<SectionSoftwareProps> = (props) => {
 
       <h3 className="ui-heading medium">
         <a {...propsLink} href="https://www.figma.com">
-          Figma
+          🎨 Figma
         </a>{' '}
         /{' '}
         <a {...propsLink} href="https://www.sketch.com">
-          Sketch
+          🎨 Sketch
         </a>
       </h3>
       <span className="ui-subhead" />
