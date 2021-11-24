@@ -32,7 +32,7 @@ const Index: React.FC<IndexProps> = (props) => {
   return (
     <>
       <Head>
-        <title>Welcome | {SITE_TITLE}</title>
+        <title>About | {SITE_TITLE}</title>
       </Head>
 
       <main className={cssComponent}>

@@ -5,6 +5,7 @@ import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 
 import { BlogPreviewColumn } from '@src/components/BlogPreviewColumn';
+import { SITE_TITLE } from '@src/config/constants';
 import { graphcms } from '@src/utils/graphcms';
 
 import styles from './index.module.css';
@@ -48,7 +49,8 @@ const Index: React.FC<IndexProps> = (props) => {
   return (
     <>
       <Head>
-        <title>Lessons learned, and other development related ramblings.</title>
+        {/* <title>Lessons learned, and other development related ramblings.</title> */}
+        <title>Ramblings | {SITE_TITLE}</title>
       </Head>
 
       <main className={cssComponent}>
