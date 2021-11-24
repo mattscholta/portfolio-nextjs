@@ -24,10 +24,10 @@ class AppDocument extends Document {
         <Html lang="en">
           <Head />
           <body>
+            <div dangerouslySetInnerHTML={{ __html: scriptArtwork }} />
             <GoogleTagManagerIFrame id={CLIENT_GOOGLE_TAG_MANAGER} />
             <Main />
             <NextScript />
-            <div dangerouslySetInnerHTML={{ __html: scriptArtwork }} />
           </body>
         </Html>
       </>
