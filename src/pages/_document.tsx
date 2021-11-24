@@ -7,7 +7,7 @@ import Document, {
   NextScript
 } from 'next/document';
 
-import { CLIENT_GOOGLE_TAG_MANAGER } from '@src/config/settings';
+import { GOOGLE_TAG_MANAGER } from '@src/config/settings';
 import { GoogleTagManagerIFrame } from '@src/services/tracking/components/GoogleTagManagerIFrame';
 import { script as scriptArtwork } from '@src/utils/artwork';
 
@@ -25,7 +25,7 @@ class AppDocument extends Document {
           <Head />
           <body>
             <div dangerouslySetInnerHTML={{ __html: scriptArtwork }} />
-            <GoogleTagManagerIFrame id={CLIENT_GOOGLE_TAG_MANAGER} />
+            <GoogleTagManagerIFrame id={GOOGLE_TAG_MANAGER} />
             <Main />
             <NextScript />
           </body>

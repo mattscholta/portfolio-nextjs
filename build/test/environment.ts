@@ -1,13 +1,10 @@
 // Configure these for our test env
 const ENVIRONMENT = {
-  CLIENT_EXTERNAL_URL: 'https://mattscholta.com',
-  CLIENT_GOOGLE_ANALYTICS: 'env-google-analytics',
-  CLIENT_GOOGLE_TAG_MANAGER: 'env-google-tag-manager',
-  CLIENT_INTERNAL_URL: 'https://mattscholta.com',
-
+  CLIENT_URL: 'https://mattscholta.com',
+  GOOGLE_ANALYTICS: 'env-google-analytics',
+  GOOGLE_TAG_MANAGER: 'env-google-tag-manager',
   GRAPHCMS_TOKEN: 'GRAPHCMS_TOKEN',
   GRAPHCMS_URL: 'GRAPHCMS_URL',
-
   NODE_ENV: 'test' as NodeJS.Process['env']['NODE_ENV']
 };
 

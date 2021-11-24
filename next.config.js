@@ -18,10 +18,9 @@ module.exports = withBundleAnalyzer(
      * @external https://nextjs.org/docs/api-reference/next.config.js/environment-variables
      */
     env: {
-      CLIENT_EXTERNAL_URL: process.env.CLIENT_EXTERNAL_URL,
-      CLIENT_GOOGLE_ANALYTICS: process.env.CLIENT_GOOGLE_ANALYTICS,
-      CLIENT_GOOGLE_TAG_MANAGER: process.env.CLIENT_GOOGLE_TAG_MANAGER,
-      CLIENT_INTERNAL_URL: process.env.CLIENT_INTERNAL_URL
+      CLIENT_URL: process.env.CLIENT_URL,
+      GOOGLE_ANALYTICS: process.env.GOOGLE_ANALYTICS,
+      GOOGLE_TAG_MANAGER: process.env.GOOGLE_TAG_MANAGER
     },
 
     /**

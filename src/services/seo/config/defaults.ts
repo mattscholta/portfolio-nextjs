@@ -3,7 +3,7 @@ import {
   SITE_DESCRIPTION,
   SITE_TITLE
 } from '@src/config/constants';
-import { CLIENT_BASE_URL } from '@src/config/settings';
+import { CLIENT_URL } from '@src/config/settings';
 
 /**
  * @external https://ahrefs.com/blog/seo-meta-tags/
@@ -12,7 +12,7 @@ import { CLIENT_BASE_URL } from '@src/config/settings';
 const defaults = {
   author: SITE_AUTHOR,
   description: SITE_DESCRIPTION,
-  image: `${CLIENT_BASE_URL}/images/share.jpg`,
+  image: `${CLIENT_URL}/images/share.jpg`,
   robots: 'index, follow',
   title: SITE_TITLE
 };
