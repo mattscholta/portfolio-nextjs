@@ -56,9 +56,6 @@ NodeList [
             title="Life's a beach, work hard and play in the sand!"
             width="1500"
           />
-          <br />
-          <br />
-          <br />
           <h2
             class="ui-heading"
           >
@@ -67,7 +64,6 @@ NodeList [
           <sub
             class="ui-subhead"
           />
-          <br />
           <p>
             After 
             <b>
