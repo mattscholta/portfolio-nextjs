@@ -8,11 +8,6 @@
 .component aside {
 }
 
-.sidebar {
-  /* padding-top: var(--grid-4x); */
-  /* max-width: 300px; */
-}
-
 .heading {
   margin-bottom: theme('spacing.6x');
   margin-top: theme('spacing.6x');
@@ -28,4 +23,7 @@
   margin: 0 0 var(--grid-2x);
   padding-left: 0;
   padding-right: 0;
+}
+
+.sidebar {
 }

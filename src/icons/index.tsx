@@ -1,8 +1,7 @@
-// import Menu from './Menu';
 import { Github } from './Github';
 import { Hamburger } from './Hamburger';
 import { LinkedIn } from './LinkedIn';
-import Logo from './Logo';
+import { Logo } from './Logo';
 import { Octocat } from './Octocat';
 import { StackOverflow } from './StackOverflow';
 import { Star } from './Star';
@@ -13,7 +12,6 @@ export {
   Hamburger,
   LinkedIn,
   Logo,
-  // Menu,
   Octocat,
   StackOverflow,
   Star,

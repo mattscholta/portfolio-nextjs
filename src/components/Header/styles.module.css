@@ -34,9 +34,9 @@
 
 .link:after {
   background-color: var(--spot-grey-3);
-  bottom: 0px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  bottom: 0;
   content: '';
   height: 0;
   left: 0;

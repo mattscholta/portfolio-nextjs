@@ -19,12 +19,12 @@ export interface BlogPreviewColumnProps {
  * @description Stateless Component / Pure Function
  */
 const BlogPreviewColumn: React.FC<BlogPreviewColumnProps> = (props) => {
-  const { className, post, small } = props;
+  const { className, post, small: _small } = props;
   const { slug, sticky, title } = post;
 
   // Setup
   // const copy = content?.substr(4);
-  const copy = false;
+  // const copy = false;
   const link = `/posts/${slug}`;
 
   // Styles

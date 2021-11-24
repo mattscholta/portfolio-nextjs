@@ -3,7 +3,6 @@
   flex: 0 0 400px;
   margin: 0 0 var(--grid-4x);
   min-width: 320px;
-  /* padding: var(--gri d-2x) 0; */
 }
 
 .component:hover {
