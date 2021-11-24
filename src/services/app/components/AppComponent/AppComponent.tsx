@@ -6,6 +6,7 @@ import { Footer } from '@src/components/Footer/Footer';
 import { Header } from '@src/components/Header/Header';
 import { AppHead } from '@src/services/app/components/AppHead';
 import { AppLifeCycle } from '@src/services/app/components/AppLifeCycle';
+import { AppLoader } from '../AppLoader/AppLoader';
 
 interface AppComponentProps {
   global: any;
@@ -39,6 +40,7 @@ const AppComponent: React.FC<AppComponentProps> = (props) => {
       {/* <RecoilRoot initializeState={initializeState}> */}
       <AppHead />
       <AppLifeCycle />
+      <AppLoader />
       <Header />
       {children}
       <Footer />

@@ -1,0 +1,26 @@
+@keyframes loader {
+  0% {
+    border-left-color: theme('colors.primary');
+    transform: rotate(0deg);
+  }
+
+  5% {
+    border-left-color: theme('colors.primary');
+  }
+
+  45%,
+  75% {
+    border-left-color: theme('colors.secondary');
+  }
+
+  95% {
+    border-left-color: theme('colors.primary');
+  }
+
+  100% {
+    border-left-color: theme('colors.primary');
+
+    /* stylelint-disable unit-allowed-list */
+    transform: rotate(2turn);
+  }
+}

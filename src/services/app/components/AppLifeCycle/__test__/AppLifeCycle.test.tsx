@@ -4,6 +4,20 @@ import { RecoilRoot } from 'recoil';
 
 import { AppLifeCycle, AppLifeCycleProps } from '../AppLifeCycle';
 
+jest.mock('next/router', () => ({
+  useRouter() {
+    return {
+      asPath: '',
+      events: {
+        on: jest.fn()
+      },
+      pathname: '/',
+      query: {},
+      route: '/'
+    };
+  }
+}));
+
 describe('AppLifeCycle', () => {
   const gtag = jest.fn();
 

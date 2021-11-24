@@ -1,5 +1,8 @@
 import * as React from 'react';
+import { useRouter } from 'next/router';
+import { useRecoilState } from 'recoil';
 
+import { appAtom } from '@src/recoil/atoms/app';
 import { setTrackingDefaults } from '@src/utils/tracking';
 
 interface AppLifeCycleProps {}
@@ -13,7 +16,20 @@ interface AppLifeCycleProps {}
  * We're using it for mount and un-mount
  */
 const AppLifeCycle: React.FC<AppLifeCycleProps> = (_props) => {
+  const [app, setApp] = useRecoilState(appAtom);
+  const { events } = useRouter();
+
   // Life Cycle
+  React.useEffect(() => {
+    events.on('routeChangeStart', () => {
+      setApp({ ...app, loading: true });
+    });
+
+    events.on('routeChangeComplete', () => {
+      setApp({ ...app, loading: false });
+    });
+  }, []);
+
   React.useEffect(() => {
     setTrackingDefaults();
   }, []);

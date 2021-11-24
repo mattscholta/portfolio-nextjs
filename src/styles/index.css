@@ -19,6 +19,7 @@
 
 /* Client App */
 @import './base.css';
+@import './animations.css';
 @import './browser.css';
 @import './headings.css';
 @import './html.css';
