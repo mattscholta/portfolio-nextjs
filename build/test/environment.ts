@@ -5,6 +5,9 @@ const ENVIRONMENT = {
   CLIENT_GOOGLE_TAG_MANAGER: 'env-google-tag-manager',
   CLIENT_INTERNAL_URL: 'https://mattscholta.com',
 
+  GRAPHCMS_TOKEN: 'GRAPHCMS_TOKEN',
+  GRAPHCMS_URL: 'GRAPHCMS_URL',
+
   NODE_ENV: 'test' as NodeJS.Process['env']['NODE_ENV']
 };
 

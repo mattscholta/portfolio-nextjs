@@ -12,6 +12,7 @@ import styles from './index.module.css';
 
 interface IndexProps {
   data: any[];
+  error?: any;
 }
 
 /**
@@ -19,7 +20,7 @@ interface IndexProps {
  * @description Application landing page (homepage)
  */
 const Index: React.FC<IndexProps> = (props) => {
-  const { data } = props;
+  const { data, error } = props;
 
   // Styles
   const cssComponent = classnames('ui-container-xl ui-main', styles.component);
@@ -39,6 +40,12 @@ const Index: React.FC<IndexProps> = (props) => {
       />
     );
   };
+
+  // 🔌 Short Circuit
+  if (error) {
+    console.log(` 💬 ~ error`, error);
+    return <div className="ui-main ui-container-xl">{error}</div>;
+  }
 
   return (
     <>
@@ -66,12 +73,18 @@ export const getServerSideProps: GetServerSideProps = async (_context) => {
     }
   `;
 
-  const query = await graphcms.request(QUERY);
-  const { portfolios } = query;
+  try {
+    const query = await graphcms.request(QUERY);
+    const { portfolios } = query;
 
-  return {
-    props: { data: portfolios }
-  };
+    return {
+      props: { data: portfolios }
+    };
+  } catch (error: any) {
+    return {
+      props: { error: error.message }
+    };
+  }
 };
 
 export { Index as default, Index };

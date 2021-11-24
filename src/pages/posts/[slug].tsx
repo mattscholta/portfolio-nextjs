@@ -93,16 +93,24 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     }
   `;
 
-  const query = await graphcms.request(QUERY);
-  const { post, posts } = query;
-  console.log(` 💬 ~ post`, post);
+  try {
+    const query = await graphcms.request(QUERY);
+    const { post, posts } = query;
+    console.log(` 💬 ~ post`, post);
 
-  return {
-    props: {
-      post,
-      related: posts
-    }
-  };
+    return {
+      props: {
+        post,
+        related: posts
+      }
+    };
+  } catch (error: any) {
+    return {
+      props: {
+        error: error.message
+      }
+    };
+  }
 };
 
 export { Slug as default, Slug };

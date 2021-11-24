@@ -29,6 +29,8 @@ export const IS_TEST = NODE_ENV === 'test';
 // Application settings
 export const CLIENT_GOOGLE_ANALYTICS = process.env.CLIENT_GOOGLE_ANALYTICS || '__unavailable__'; // prettier-ignore
 export const CLIENT_GOOGLE_TAG_MANAGER = process.env.CLIENT_GOOGLE_TAG_MANAGER || '__unavailable__'; // prettier-ignore
+export const GRAPHCMS_TOKEN = process.env.GRAPHCMS_TOKEN || '__unavailable__';
+export const GRAPHCMS_URL = process.env.GRAPHCMS_URL || '__unavailable__';
 
 /**
  * ⚠️ Vercel does not account for domain names in NEXT_PUBLIC_VERCEL_URL ⚠️

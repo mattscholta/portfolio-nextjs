@@ -11,7 +11,8 @@ import { graphcms } from '@src/utils/graphcms';
 import styles from './index.module.css';
 
 interface IndexProps {
-  posts: any[];
+  data: any[];
+  error?: any;
 }
 
 /**
@@ -19,7 +20,7 @@ interface IndexProps {
  * @description Application landing page (homepage)
  */
 const Index: React.FC<IndexProps> = (props) => {
-  const { posts } = props;
+  const { data, error } = props;
 
   // Styles
   const cssComponent = classnames('ui-main', styles.component);
@@ -40,6 +41,12 @@ const Index: React.FC<IndexProps> = (props) => {
     );
   };
 
+  // 🔌 Short Circuit
+  if (error) {
+    console.log(` 💬 ~ error`, error);
+    return <div className="ui-main ui-container-xl">{error}</div>;
+  }
+
   return (
     <>
       <Head>
@@ -57,7 +64,7 @@ const Index: React.FC<IndexProps> = (props) => {
           </blockquote>
 
           <aside className={cssPreviews}>
-            {posts.map(renderPreview)}
+            {data.map(renderPreview)}
             {/* <BlogDisclaimer /> */}
             {/* {related && related.map(renderRelatedPosts)} */}
             {/* <BlogSharing /> */}
@@ -81,12 +88,18 @@ export const getServerSideProps: GetServerSideProps = async (_context) => {
     }
   `;
 
-  const query = await graphcms.request(QUERY);
-  const { posts } = query;
+  try {
+    const query = await graphcms.request(QUERY);
+    const { posts } = query;
 
-  return {
-    props: { posts }
-  };
+    return {
+      props: { data: posts }
+    };
+  } catch (error: any) {
+    return {
+      props: { error: error.message }
+    };
+  }
 };
 
 export { Index as default, Index };

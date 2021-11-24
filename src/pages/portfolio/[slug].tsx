@@ -83,14 +83,22 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     }
   `;
 
-  const query = await graphcms.request(QUERY);
-  const { portfolios } = query;
+  try {
+    const query = await graphcms.request(QUERY);
+    const { portfolios } = query;
 
-  return {
-    props: {
-      data: portfolios[0] ?? null
-    }
-  };
+    return {
+      props: {
+        data: portfolios[0] ?? null
+      }
+    };
+  } catch (error: any) {
+    return {
+      props: {
+        error: error.message
+      }
+    };
+  }
 };
 
 export { Slug as default, Slug };
