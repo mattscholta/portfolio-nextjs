@@ -113,20 +113,23 @@
   }
 
   .nav {
-    background-color: var(--spot-grey-7);
+    background-color: var(--spot-grey-8);
     box-shadow: 0 3px var(--grid-1xs) 0 var(--spot-dropshadow);
     height: 0;
     left: 0;
+    opacity: 0%;
     overflow: hidden;
     position: absolute;
     top: var(--header-height);
     transform: translate3d(0, 0, 0);
-    transition: height 240ms ease-in;
+    transition: height 240ms ease-in-out, opacity 140ms ease-in-out 140ms;
     width: 100%;
   }
 
   .nav.open {
-    height: calc(50px * 4);
+    /* height: calc(50px * 4); */
+    height: calc(100vh - var(--header-height));
+    opacity: 100%;
     transition: height 240ms ease-in-out;
   }
 
