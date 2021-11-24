@@ -33,7 +33,8 @@ module.exports = {
     '<rootDir>/node_modules/'
   ],
   transform: {
-    '^.+\\.(js|ts)x?$': 'babel-jest',
+    // '^.+\\.(js|ts)x?$': 'babel-jest',
+    '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }],
     '^.+\\.graphql$': 'jest-transform-graphql'
   },
   verbose: false
