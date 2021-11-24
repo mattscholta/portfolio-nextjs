@@ -44,7 +44,7 @@ const analytics: Analytics = {
    * as Events.
    */
   event(category, action = 'click', label, value) {
-    if (typeof window.ga === 'undefined') return;
+    if (typeof (window as any).ga === 'undefined') return;
 
     const data: any = {
       eventAction: action,
@@ -55,7 +55,7 @@ const analytics: Analytics = {
     if (label) data.eventLabel = label;
     if (value) data.eventValue = value;
 
-    window.ga('gtm2.send', data);
+    (window as any).ga('gtm2.send', data);
 
     analytics.logger('event', { action, category, label });
   },
@@ -67,7 +67,7 @@ const analytics: Analytics = {
     // if (action === 'PUSH') scrollTop();
 
     if (action === 'PUSH') {
-      window.scroll({ top: 0 });
+      (window as any).scroll({ top: 0 });
     }
   },
 
@@ -83,13 +83,13 @@ const analytics: Analytics = {
    * case you can set a timeout to ensure execution.
    */
   hitWithCallback(event: string, category: string, action: string, cbk: any) {
-    if (typeof window.ga === 'undefined') return;
+    if (typeof (window as any).ga === 'undefined') return;
 
     if (typeof cbk !== 'function') {
       throw new Error('Callback function is required');
     }
 
-    window.ga('gtm2.send', event, category, action, {
+    (window as any).ga('gtm2.send', event, category, action, {
       hitCallback: cbk
     });
 
@@ -114,9 +114,9 @@ const analytics: Analytics = {
    * to beacon:
    */
   outbound(category: string, action = 'click', label: any = null) {
-    if (typeof window.ga === 'undefined') return;
+    if (typeof (window as any).ga === 'undefined') return;
 
-    window.ga('gtm2.send', {
+    (window as any).ga('gtm2.send', {
       eventAction: action,
       eventCategory: category,
       eventLabel: label,
@@ -135,9 +135,9 @@ const analytics: Analytics = {
    * content; this is known as "virtual pageviews".
    */
   page(page: string) {
-    if (typeof window.ga === 'undefined') return;
+    if (typeof (window as any).ga === 'undefined') return;
 
-    window.ga('gtm2.send', {
+    (window as any).ga('gtm2.send', {
       hitType: 'pageview',
       page
       // sessionControl: 'start',
@@ -153,9 +153,9 @@ const analytics: Analytics = {
    * you might measure a Facebook "Like" or a Twitter "Tweet".
    */
   social(action: string, network: string, target: string) {
-    if (typeof window.ga === 'undefined') return;
+    if (typeof (window as any).ga === 'undefined') return;
 
-    window.ga('gtm2.send', {
+    (window as any).ga('gtm2.send', {
       hitType: 'social',
       socialAction: action,
       socialNetwork: network,
@@ -172,9 +172,9 @@ const analytics: Analytics = {
    * code to capture this period of time.
    */
   timing(category: string, variable: string, value: string) {
-    if (typeof window.ga === 'undefined') return;
+    if (typeof (window as any).ga === 'undefined') return;
 
-    window.ga('gtm2.send', {
+    (window as any).ga('gtm2.send', {
       hitType: 'timing',
       timingCategory: category,
       timingValue: value,
@@ -191,7 +191,7 @@ const analytics: Analytics = {
    * code to capture this period of time.
    */
   vitals(category: string, action: string, label: string, value: number) {
-    if (typeof window.ga === 'undefined') return;
+    if (typeof (window as any).ga === 'undefined') return;
 
     const data: any = {
       eventAction: action,
@@ -201,7 +201,7 @@ const analytics: Analytics = {
       hitType: 'event'
     };
 
-    window.ga('gtm2.send', data);
+    (window as any).ga('gtm2.send', data);
 
     analytics.logger('event', data);
   }

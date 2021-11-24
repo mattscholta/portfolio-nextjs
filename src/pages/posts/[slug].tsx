@@ -12,6 +12,7 @@ import styles from './[slug].module.css';
 
 interface SlugProps {
   post: any;
+  related: any;
 }
 
 /**
