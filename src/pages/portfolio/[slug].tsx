@@ -4,7 +4,7 @@ import { gql } from 'graphql-request';
 import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 
-import { BlockQuote } from '@src/components/BlockQuote/BlockQuote';
+import { BlockQuote } from '@src/components/BlockQuote';
 import { SITE_TITLE } from '@src/config/constants';
 import { graphcms } from '@src/utils/graphcms';
 

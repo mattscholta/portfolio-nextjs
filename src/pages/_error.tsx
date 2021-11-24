@@ -16,6 +16,12 @@ const ErrorPage: React.FC<ErrorPageProps> = (_props) => {
   // Styles
   const cssComponent = classnames('ui-main', styles.component);
 
+  // Handlers
+  const onClickRefresh = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    window.location.reload();
+  };
+
   return (
     <>
       <Head>
@@ -24,7 +30,17 @@ const ErrorPage: React.FC<ErrorPageProps> = (_props) => {
       </Head>
 
       <main className={cssComponent}>
+        <h1 className="ui-heading u-mb-2x">¯\_(ツ)_/¯</h1>
         <p>Sorry, we couldn’t find the page you were looking for.</p>
+        <div className="u-flex">
+          <a className="ui-link" href="/">
+            Homepage
+          </a>
+          <span className="u-mx-1x">|</span>
+          <a className="ui-link" href="/" onClick={onClickRefresh}>
+            Try again
+          </a>
+        </div>
       </main>
     </>
   );
