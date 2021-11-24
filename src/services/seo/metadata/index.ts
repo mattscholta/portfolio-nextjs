@@ -1,4 +1,4 @@
-import { CLIENT_URL } from '@src/config/settings';
+import { BASE_URL } from '@src/config/settings';
 import { defaults } from '@src/services/seo/config/defaults';
 import { getAppleMeta } from '@src/services/seo/metadata/apple';
 import { getBrowserMeta } from '@src/services/seo/metadata/browsers';
@@ -18,7 +18,7 @@ export interface Metadata {
 const defaultMetadata: Metadata = {
   description: defaults.description,
   image: defaults.image,
-  path: CLIENT_URL,
+  path: BASE_URL,
   title: defaults.title
 };
 

@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 
 import { SITE_TITLE } from '@src/config/constants';
 import {
-  CLIENT_URL,
+  BASE_URL,
   GOOGLE_ANALYTICS,
   GOOGLE_TAG_MANAGER
 } from '@src/config/settings';
@@ -25,7 +25,7 @@ const AppHead: React.FC<AppHeadProps> = (_props) => {
   const { pathname } = useRouter();
 
   // Setup
-  const canonical = `${CLIENT_URL}${pathname}`;
+  const canonical = `${BASE_URL}${pathname}`;
 
   // Markup
   const renderMetaTag = (

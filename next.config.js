@@ -20,7 +20,9 @@ module.exports = withBundleAnalyzer(
     env: {
       CLIENT_URL: process.env.CLIENT_URL,
       GOOGLE_ANALYTICS: process.env.GOOGLE_ANALYTICS,
-      GOOGLE_TAG_MANAGER: process.env.GOOGLE_TAG_MANAGER
+      GOOGLE_TAG_MANAGER: process.env.GOOGLE_TAG_MANAGER,
+      GRAPHCMS_TOKEN: process.env.GRAPHCMS_TOKEN,
+      GRAPHCMS_URL: process.env.GRAPHCMS_URL
     },
 
     /**
