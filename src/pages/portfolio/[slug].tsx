@@ -22,13 +22,6 @@ interface SlugProps {
 const Slug: React.FC<SlugProps> = (props) => {
   const { data, error } = props;
 
-  // Setup
-  const image = data.images[0]?.url ?? {};
-  const style = {
-    backgroundImage: `url(${image})`,
-    backgroundPosition: 'center'
-  };
-
   // Styles
   const tailwind = `u-flex u-flex-center u-flex-justify-center`;
   const cssComponent = classnames('ui-main', styles.component);
@@ -45,6 +38,13 @@ const Slug: React.FC<SlugProps> = (props) => {
       <div className="ui-container-lg ui-main u-mt-4x">No data found...</div>
     );
   }
+
+  // Setup
+  const image = data.images[0]?.url ?? {};
+  const style = {
+    backgroundImage: `url(${image})`,
+    backgroundPosition: 'center'
+  };
 
   return (
     <>

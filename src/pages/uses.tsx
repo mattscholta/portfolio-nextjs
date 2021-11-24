@@ -19,15 +19,12 @@ interface IndexProps {
  * @description Application landing page (homepage)
  */
 const Index: React.FC<IndexProps> = (_props) => {
-  // Setup
-  const propsLink = { rel: 'noopener noreferrer', target: '_blank' };
-
   // Styles
   const cssComponent = classnames('ui-main', styles.component);
 
   // Markup
   const linkUses = (
-    <a {...propsLink} href={links.hrefUses}>
+    <a href={links.hrefUses} rel="noopener noreferrer" target="_blank">
       uses.tech
     </a>
   );

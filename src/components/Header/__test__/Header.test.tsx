@@ -30,7 +30,6 @@ describe('Header', () => {
 
   beforeEach(() => {
     props = {
-      asdf: 'asdf',
       navigation: {
         open: false
       },
