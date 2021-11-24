@@ -16,19 +16,23 @@ NodeList [
       width="1880"
     />
     <div
-      class="u-flex-grow"
+      class="u-px-2x"
     >
       <div
-        class="u-flex heading"
+        class="u-flex-grow"
       >
-        <h2 />
+        <div
+          class="u-flex heading"
+        >
+          <h2 />
+        </div>
       </div>
+      <span
+        class="link"
+      >
+        Read More »
+      </span>
     </div>
-    <span
-      class="link"
-    >
-      Read More »
-    </span>
   </a>,
 ]
 `;

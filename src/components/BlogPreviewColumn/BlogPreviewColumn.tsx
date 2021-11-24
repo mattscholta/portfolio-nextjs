@@ -52,15 +52,17 @@ const BlogPreviewColumn: React.FC<BlogPreviewColumnProps> = (props) => {
           width={1880}
         />
 
-        <div className="u-flex-grow">
-          <div className={cssHeading}>
-            {sticky && <Star fill={color.gray[7]} height={16} width={16} />}
-            <h2>{title}</h2>
+        <div className="u-px-2x">
+          <div className="u-flex-grow">
+            <div className={cssHeading}>
+              {sticky && <Star fill={color.gray[7]} height={16} width={16} />}
+              <h2>{title}</h2>
+            </div>
+            {/* <br /> */}
+            {/* {!small && copy && <p>{copy}</p>} */}
           </div>
-          {/* <br /> */}
-          {/* {!small && copy && <p>{copy}</p>} */}
+          <span className={styles.link}>Read More &#xbb;</span>
         </div>
-        <span className={styles.link}>Read More &#xbb;</span>
       </a>
     </Link>
   );

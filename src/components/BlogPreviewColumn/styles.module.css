@@ -27,7 +27,7 @@
 }
 
 .component img {
-  margin-bottom: var(--grid-3x);
+  margin-bottom: var(--grid-2x);
 }
 
 .component p {
@@ -57,12 +57,21 @@
 }
 
 .image {
-  border: 1px solid var(--spot-grey-3);
-  padding: 2px;
+  border: none;
+  border-bottom: 1px solid var(--spot-grey-3);
+  border-top: 1px solid var(--spot-grey-3);
+  outline: none;
 }
 
 .link {
   color: var(--spot-primary);
   float: right;
   font-size: 0.8em;
+}
+
+@screen md {
+  .image {
+    border: 1px solid var(--spot-grey-3);
+    padding: 2px;
+  }
 }
