@@ -6,7 +6,7 @@ NodeList [
     class="component"
   >
     <div
-      class="ui-container-xl u-flex"
+      class="ui-container-xl u-flex u-justify-center md:u-justify-start"
     >
       <button
         class="menu"
@@ -45,7 +45,7 @@ NodeList [
         </svg>
       </button>
       <a
-        class="u-mr-2x"
+        class="md:u-mr-2x"
         href="/"
       >
         <svg

@@ -29,14 +29,14 @@ const data: Experience[] = [
     link: 'https://www.bynd.com/',
     name: 'Beyond',
     role: 'Technical Team Lead'
-  },
-  {
-    date: 'Jul 2010 – Nov 2011',
-    description: `Clients included: Facebook, Snapfish, Union Bank, AOL, Gerber, Proactive, Charter`,
-    link: 'https://www.wearelift.com/',
-    name: 'Creative Lift',
-    role: 'Interactive Developer'
   }
+  // {
+  //   date: 'Jul 2010 – Nov 2011',
+  //   description: `Clients included: Facebook, Snapfish, Union Bank, AOL, Gerber, Proactive, Charter`,
+  //   link: 'https://www.wearelift.com/',
+  //   name: 'Creative Lift',
+  //   role: 'Interactive Developer'
+  // }
 ];
 
 export { data };

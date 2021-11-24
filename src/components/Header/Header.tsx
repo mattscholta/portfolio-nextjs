@@ -71,7 +71,7 @@ const Header: React.FC<HeaderProps> = (_props) => {
 
   return (
     <div className={styles.component}>
-      <div className="ui-container-xl u-flex">
+      <div className="ui-container-xl u-flex u-justify-center md:u-justify-start">
         <button
           className={styles.menu}
           onClick={onToggleNav}
@@ -81,7 +81,7 @@ const Header: React.FC<HeaderProps> = (_props) => {
           <Hamburger fill={color.white} height={20} width={20} />
         </button>
         <Link href="/">
-          <a className="u-mr-2x">
+          <a className="md:u-mr-2x">
             <Logo className={styles.svgBrand} fill={color.white} />
           </a>
         </Link>
