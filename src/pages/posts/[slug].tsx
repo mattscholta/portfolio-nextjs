@@ -11,6 +11,7 @@ import { graphcms } from '@src/utils/graphcms';
 import styles from './[slug].module.css';
 
 interface SlugProps {
+  error?: any;
   post: any;
   related: any;
 }
@@ -20,7 +21,7 @@ interface SlugProps {
  * @description Application landing page (homepage)
  */
 const Slug: React.FC<SlugProps> = (props) => {
-  const { post, related } = props;
+  const { error, post, related } = props;
 
   // Setup
   const image = post.images[0].url;
@@ -42,6 +43,10 @@ const Slug: React.FC<SlugProps> = (props) => {
   );
 
   // 🔌 Short Circuit
+  if (error) {
+    return <div className="ui-main ui-container-xl">{error}</div>;
+  }
+
   if (!post) return null;
 
   return (
@@ -96,7 +101,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   try {
     const query = await graphcms.request(QUERY);
     const { post, posts } = query;
-    console.log(` 💬 ~ post`, post);
 
     return {
       props: {

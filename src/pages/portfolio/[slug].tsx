@@ -11,6 +11,7 @@ import styles from './[slug].module.css';
 
 interface SlugProps {
   data: any;
+  error?: any;
 }
 
 /**
@@ -18,7 +19,7 @@ interface SlugProps {
  * @description Application landing page (homepage)
  */
 const Slug: React.FC<SlugProps> = (props) => {
-  const { data } = props;
+  const { data, error } = props;
 
   // Setup
   const image = data.images[0]?.url ?? {};
@@ -34,6 +35,10 @@ const Slug: React.FC<SlugProps> = (props) => {
   const cssImage = classnames('image-featured', tailwind, styles.image);
 
   // 🔌 Short Circuit
+  if (error) {
+    return <div className="ui-main ui-container-xl">{error}</div>;
+  }
+
   if (!data) {
     return (
       <div className="ui-container-lg ui-main u-mt-4x">No data found...</div>

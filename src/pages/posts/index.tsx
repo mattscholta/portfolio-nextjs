@@ -43,14 +43,13 @@ const Index: React.FC<IndexProps> = (props) => {
 
   // 🔌 Short Circuit
   if (error) {
-    console.log(` 💬 ~ error`, error);
     return <div className="ui-main ui-container-xl">{error}</div>;
   }
 
   return (
     <>
       <Head>
-        <title>Index | {SITE_TITLE}</title>
+        <title>Lessons learned, and other development related ramblings.</title>
       </Head>
 
       <main className={cssComponent}>

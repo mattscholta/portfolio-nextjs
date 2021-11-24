@@ -11,7 +11,8 @@ NodeList [
       alt=""
       class="image"
       height="1250"
-      loading="lazy"
+      loading="eager"
+      title=""
       width="1880"
     />
     <div

@@ -46,8 +46,9 @@ const BlogPreviewColumn: React.FC<BlogPreviewColumnProps> = (props) => {
           alt={post.title || ''}
           className={styles.image}
           height={1250}
-          loading="lazy"
+          loading="eager"
           src={post.imageTemp}
+          title={post.title || ''}
           width={1880}
         />
 
