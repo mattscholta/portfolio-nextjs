@@ -39,11 +39,12 @@ module.exports = withBundleAnalyzer(
      * INCREDIBLY easy to get our PWA/Lighthouse scores up and improve UX
      */
     pwa: {
-      // buildExcludes: [/chunks\/pages\/legal-*\/*/],
+      buildExcludes: [/middleware-manifest\.json/],
       cacheOnFrontEndNav: true,
       dest: 'public',
       disable: process.env.NODE_ENV !== 'production',
       publicExcludes: [
+        '!**/middleware-manifest.json',
         '!fonts/**/*.ttf',
         '!fonts/**/*.woff',
         // '!fonts/**/*.woff2',
