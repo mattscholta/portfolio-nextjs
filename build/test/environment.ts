@@ -3,6 +3,7 @@ const ENVIRONMENT = {
   CLIENT_URL: 'https://mattscholta.com',
   GOOGLE_ANALYTICS: 'env-google-analytics',
   GOOGLE_TAG_MANAGER: 'env-google-tag-manager',
+  GRAPHCMS_ADMIN: 'GRAPHCMS_ADMIN',
   GRAPHCMS_TOKEN: 'GRAPHCMS_TOKEN',
   GRAPHCMS_URL: 'GRAPHCMS_URL',
   NODE_ENV: 'test' as NodeJS.Process['env']['NODE_ENV']

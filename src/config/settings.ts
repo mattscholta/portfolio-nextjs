@@ -20,6 +20,7 @@ export const VERCEL_URL = process.env.NEXT_PUBLIC_VERCEL_URL;
 export const CLIENT_URL = process.env.CLIENT_URL;
 export const GOOGLE_ANALYTICS = process.env.GOOGLE_ANALYTICS || '__unavailable__'; // prettier-ignore
 export const GOOGLE_TAG_MANAGER = process.env.GOOGLE_TAG_MANAGER || '__unavailable__'; // prettier-ignore
+export const GRAPHCMS_ADMIN = process.env.GRAPHCMS_ADMIN || '__unavailable__';
 export const GRAPHCMS_TOKEN = process.env.GRAPHCMS_TOKEN || '__unavailable__';
 export const GRAPHCMS_URL = process.env.GRAPHCMS_URL || '__unavailable__';
 export const NODE_ENV = process.env.NODE_ENV || 'development';
