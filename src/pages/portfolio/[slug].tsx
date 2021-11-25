@@ -50,7 +50,8 @@ const Slug: React.FC<SlugProps> = (props) => {
     <>
       <Head>
         <title>
-          {data.company} {data.title} | {SITE_TITLE}
+          {data.title} | {SITE_TITLE}
+          {/* {data.company} {data.title} | {SITE_TITLE} */}
         </title>
       </Head>
 
