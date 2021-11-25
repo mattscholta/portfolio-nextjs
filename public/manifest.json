@@ -1,60 +1,60 @@
 {
-  "author": "BarGuide.io",
+  "author": "Matthew D. Scholta",
   "background_color": "#fff",
   "default_locale": "en",
   "display": "standalone",
   "dir": "ltr",
-  "description": "BarGuide.io",
+  "description": "2021 Portfolio",
   "icons": [
     {
-      "purpose": "maskable",
+      "purpose": "any maskable",
       "sizes": "48x48",
-      "src": "/images/icon.png",
+      "src": "https://res.cloudinary.com/mattscholta/image/upload/v1614475665/mattscholta/icons/48x48.png",
       "type": "image/png"
     },
     {
-      "purpose": "maskable",
+      "purpose": "any maskable",
       "sizes": "96x96",
-      "src": "/images/icon.png",
+      "src": "https://res.cloudinary.com/mattscholta/image/upload/v1614475665/mattscholta/icons/96x96.png",
       "type": "image/png"
     },
     {
-      "purpose": "maskable",
+      "purpose": "any maskable",
       "sizes": "144x144",
-      "src": "/images/icon.png",
+      "src": "https://res.cloudinary.com/mattscholta/image/upload/v1614475665/mattscholta/icons/144x144.png",
       "type": "image/png"
     },
     {
-      "purpose": "maskable",
+      "purpose": "any maskable",
       "sizes": "192x192",
-      "src": "/images/icon.png",
+      "src": "https://res.cloudinary.com/mattscholta/image/upload/v1614475665/mattscholta/icons/192x192.png",
       "type": "image/png"
     },
     {
-      "purpose": "maskable",
+      "purpose": "any maskable",
       "sizes": "256x256",
-      "src": "/images/icon.png",
+      "src": "https://res.cloudinary.com/mattscholta/image/upload/v1614475665/mattscholta/icons/256x256.png",
       "type": "image/png"
     },
     {
-      "purpose": "maskable",
+      "purpose": "any maskable",
       "sizes": "384x384",
-      "src": "/images/icon.png",
+      "src": "https://res.cloudinary.com/mattscholta/image/upload/v1614475665/mattscholta/icons/384x384.png",
       "type": "image/png"
     },
     {
-      "purpose": "maskable",
+      "purpose": "any maskable",
       "sizes": "512x512",
-      "src": "/images/icon.png",
+      "src": "https://res.cloudinary.com/mattscholta/image/upload/v1614475665/mattscholta/icons/512x512.png",
       "type": "image/png"
     }
   ],
   "lang": "en-US",
   "manifest_version": 1.0,
-  "name": "2021 BarGuide",
+  "name": "2021 Portfolio",
   "orientation": "portrait",
   "scope": "/",
-  "short_name": "BarGuide",
+  "short_name": "Portfolio",
   "start_url": "/",
   "theme_color": "#555",
   "version": "1.0"
