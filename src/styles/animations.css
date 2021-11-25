@@ -10,7 +10,7 @@
 
   45%,
   75% {
-    border-left-color: theme('colors.secondary');
+    border-left-color: theme('colors.white');
   }
 
   95% {

@@ -8,7 +8,7 @@ export interface AppState {
 }
 
 export const appDefault: AppState = {
-  loading: false,
+  loading: true,
   navigation: {
     open: false
   }

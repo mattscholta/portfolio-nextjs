@@ -1,5 +1,5 @@
 .component {
-  background-color: rgba(255 255 255 / 85%);
+  background-color: rgba(0 0 0 / 85%);
   opacity: 0;
   pointer-events: none;
   transition: opacity 200ms ease-out;
@@ -7,14 +7,14 @@
 }
 
 .component p {
-  color: theme('colors.gray.4');
-  font-size: theme('fontSize.18');
+  color: theme('colors.white');
+  font-size: theme('fontSize.16');
   margin-top: theme('spacing.2x');
 }
 
 .loader {
   animation: 'loader' 2000ms infinite linear;
-  border: theme('spacing.1xs') solid theme('colors.gray.2');
+  border: theme('spacing.1xs') solid rgba(255 255 255 / 15%);
   border-left-color: theme('colors.primary');
   border-radius: 50%;
   height: 50px;
