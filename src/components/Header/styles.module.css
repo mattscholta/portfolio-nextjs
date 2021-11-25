@@ -93,11 +93,6 @@
 }
 
 @media (max-width: 768px) {
-  .link {
-    background: none;
-    display: block;
-  }
-
   .logo {
     margin: auto;
   }
@@ -114,23 +109,39 @@
 
   .nav {
     background-color: var(--spot-grey-8);
+    bottom: 0;
     box-shadow: 0 3px var(--grid-1xs) 0 var(--spot-dropshadow);
-    height: 0;
+    height: calc(100vh - var(--header-height));
     left: 0;
     opacity: 0;
     overflow: hidden;
+    padding-top: 20px;
+    pointer-events: none;
     position: absolute;
+    right: 0;
     top: var(--header-height);
     transform: translate3d(0, 0, 0);
-    transition: height 240ms ease-in-out, opacity 140ms ease-in-out 140ms;
+    transition: opacity 340ms ease-in-out;
     width: 100%;
   }
 
   .nav.open {
-    /* height: calc(50px * 4); */
-    height: calc(100vh - var(--header-height));
     opacity: 1;
-    transition: height 240ms ease-in-out;
+    pointer-events: all;
+  }
+
+  .link {
+    background-color: transparent;
+    display: block;
+
+    /* prettier-ignore */
+    transition: background-color 200ms ease-out, color 200ms ease-out, padding-left 200ms ease-out;
+  }
+
+  .active {
+    background-color: theme('colors.gray.7');
+    color: theme('colors.gray.2');
+    padding-left: theme('spacing.3x');
   }
 
   .link:hover:after,
