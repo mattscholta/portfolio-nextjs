@@ -38,6 +38,12 @@
       "type": "image/png"
     },
     {
+      "purpose": "any maskable",
+      "sizes": "256x256",
+      "src": "https://res.cloudinary.com/mattscholta/image/upload/v1614475665/mattscholta/icons/256x256.png",
+      "type": "image/png"
+    },
+    {
       "purpose": "any",
       "sizes": "384x384",
       "src": "https://res.cloudinary.com/mattscholta/image/upload/v1614475665/mattscholta/icons/384x384.png",
