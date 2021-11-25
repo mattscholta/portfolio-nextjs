@@ -3,7 +3,7 @@
 exports[`AppLoader matches snapshot 1`] = `
 NodeList [
   <div
-    class="u-flex u-items-center u-justify-center u-fixed u-inset-0 component visible"
+    class="u-flex u-items-center u-justify-center u-fixed u-inset-0 component"
   >
     <div
       class="u-flex u-flex-col u-items-center"
