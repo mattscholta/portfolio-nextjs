@@ -15,47 +15,35 @@ NodeList [
       These apps are just useful for navigating the day-to-day. Some of which I am highly satisfied with like Rocket, 1Pass and BetterTouch, and the others are just necessary.
     </p>
     <ul
-      style="column-count: 3; text-align: center;"
+      class="u-flex u-flex-col md:u-flex-row"
     >
-      <li
-        class="u-py-2x"
+      <a
+        class="u-text-24 u-py-2x u-flex-1 u-text-center"
+        href="https://1password.com"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="🔐 1Password"
       >
-        <a
-          class="u-text-24"
-          href="https://1password.com"
-          rel="noopener noreferrer"
-          target="_blank"
-          title="🔐 1Password"
-        >
-          🔐 1Password
-        </a>
-      </li>
-      <li
-        class="u-py-2x"
+        🔐 1Password
+      </a>
+      <a
+        class="u-text-24 u-py-2x u-flex-1 u-text-center"
+        href="https://folivora.ai"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="👆 BetterTouch"
       >
-        <a
-          class="u-text-24"
-          href="https://folivora.ai"
-          rel="noopener noreferrer"
-          target="_blank"
-          title="👆 BetterTouch"
-        >
-          👆 BetterTouch
-        </a>
-      </li>
-      <li
-        class="u-py-2x"
+        👆 BetterTouch
+      </a>
+      <a
+        class="u-text-24 u-py-2x u-flex-1 u-text-center"
+        href="https://matthewpalmer.net/rocket"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="🚀 Rocket App"
       >
-        <a
-          class="u-text-24"
-          href="https://matthewpalmer.net/rocket"
-          rel="noopener noreferrer"
-          target="_blank"
-          title="🚀 Rocket App"
-        >
-          🚀 Rocket App
-        </a>
-      </li>
+        🚀 Rocket App
+      </a>
     </ul>
   </section>,
 ]

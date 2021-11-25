@@ -13,22 +13,20 @@ export interface SectionProductivityProps {
 const SectionProductivity: React.FC<SectionProductivityProps> = (props) => {
   const { className } = props;
 
-  // Setup
-  const propsLink = {
-    rel: 'noopener noreferrer',
-    target: '_blank'
-  };
-
   // Markup
   const renderListItem = (link: any) => {
     const { href, title } = link;
 
     return (
-      <li className="u-py-2x" key={href}>
-        <a {...propsLink} {...link} className="u-text-24">
-          {title}
-        </a>
-      </li>
+      <a
+        {...link}
+        className="u-text-24 u-py-2x u-flex-1 u-text-center"
+        key={href}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        {title}
+      </a>
     );
   };
 
@@ -43,7 +41,7 @@ const SectionProductivity: React.FC<SectionProductivityProps> = (props) => {
         others are just necessary.
       </p>
 
-      <ul style={{ columnCount: 3, textAlign: 'center' }}>
+      <ul className="u-flex u-flex-col md:u-flex-row">
         {data.map(renderListItem)}
       </ul>
     </section>
