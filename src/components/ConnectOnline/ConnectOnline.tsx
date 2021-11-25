@@ -3,6 +3,7 @@ import { color } from '@barguide/style-guide';
 import classnames from 'classnames';
 
 import { Github, LinkedIn, Twitter } from '@src/icons';
+import { analytics } from '@src/utils/analytics';
 
 import styles from './styles.module.css';
 
@@ -23,11 +24,10 @@ const ConnectOnline: React.FC<ConnectOnlineProps> = (props) => {
 
   // Handlers
   const onClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    event.preventDefault();
+    const { currentTarget } = event;
+    const { gaLabel } = currentTarget.dataset;
 
-    // const { currentTarget } = event;
-    // const { gaLabel } = currentTarget.dataset;
-    // analytics.event('connect-online', 'click', gaLabel);
+    analytics.event('connect-online', 'click', gaLabel);
   };
 
   return (
