@@ -38,10 +38,11 @@ const SectionHardware: React.FC<SectionHardwareProps> = (props) => {
         <ul className={cssHardware}>
           <li>
             Laptop -{' '}
-            <a {...propsLink} href="https://support.apple.com/kb/SP776">
-              15" MacBook Pro, 2018
+            <a {...propsLink} href="https://support.apple.com/kb/SP854">
+              14" MacBook Pro, 2021
             </a>
           </li>
+          <li className="nested">M1 Max, 64GB of RAM 😍</li>
           <li>
             Monitor -{' '}
             <a

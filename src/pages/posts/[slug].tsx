@@ -4,8 +4,9 @@ import { gql } from 'graphql-request';
 import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 
-import { BlogPreviewRow } from '@src/components/BlogPreviewRow/BlogPreviewRow';
+import { BlogPreviewRow } from '@src/components/BlogPreviewRow';
 import { SITE_TITLE } from '@src/config/constants';
+import { AppErrorMessage } from '@src/services/app/components/AppErrorMessage';
 import { graphcms } from '@src/utils/graphcms';
 
 import styles from './[slug].module.css';
@@ -22,10 +23,6 @@ interface SlugProps {
  */
 const Slug: React.FC<SlugProps> = (props) => {
   const { error, post, related } = props;
-
-  // Setup
-  const image = post.images[0].url;
-  const style = { backgroundImage: `url(${image})` };
 
   // Styles
   const tailwind = `u-flex u-flex-center u-flex-justify-center`;
@@ -44,10 +41,16 @@ const Slug: React.FC<SlugProps> = (props) => {
 
   // 🔌 Short Circuit
   if (error) {
-    return <div className="ui-main ui-container-xl">{error}</div>;
+    return (
+      <AppErrorMessage className="ui-main ui-container-xl" message={error} />
+    );
   }
 
   if (!post) return null;
+
+  // Setup
+  const image = post.images[0].url;
+  const style = { backgroundImage: `url(${image})` };
 
   return (
     <>

@@ -6,6 +6,7 @@ import Head from 'next/head';
 
 import { BlockQuote } from '@src/components/BlockQuote';
 import { SITE_TITLE } from '@src/config/constants';
+import { AppErrorMessage } from '@src/services/app/components/AppErrorMessage';
 import { graphcms } from '@src/utils/graphcms';
 
 import styles from './[slug].module.css';
@@ -30,8 +31,12 @@ const Slug: React.FC<SlugProps> = (props) => {
 
   // 🔌 Short Circuit
   if (error) {
-    return <div className="ui-main ui-container-xl">{error}</div>;
+    return (
+      <AppErrorMessage className="ui-main ui-container-xl" message={error} />
+    );
   }
+
+  console.log(` 💬 ~ data`, data);
 
   if (!data) {
     return (

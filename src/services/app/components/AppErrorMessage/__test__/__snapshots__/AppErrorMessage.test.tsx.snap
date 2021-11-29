@@ -3,9 +3,37 @@
 exports[`AppErrorMessage renders an error message: rendered 1`] = `
 NodeList [
   <div
-    class="u-block u-text-14"
+    class="component"
   >
-    Sample error message
+    <h1
+      class="ui-heading u-mb-2x"
+    >
+      ¯\\_(ツ)_/¯
+    </h1>
+    <p>
+      Sample error message
+    </p>
+    <div
+      class="u-flex"
+    >
+      <a
+        class="ui-link"
+        href="/"
+      >
+        Homepage
+      </a>
+      <span
+        class="u-mx-1x"
+      >
+        |
+      </span>
+      <a
+        class="ui-link"
+        href="/"
+      >
+        Try again
+      </a>
+    </div>
   </div>,
 ]
 `;

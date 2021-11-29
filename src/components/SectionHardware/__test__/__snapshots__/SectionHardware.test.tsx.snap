@@ -33,12 +33,17 @@ NodeList [
           Laptop -
            
           <a
-            href="https://support.apple.com/kb/SP776"
+            href="https://support.apple.com/kb/SP854"
             rel="noopener noreferrer"
             target="_blank"
           >
-            15" MacBook Pro, 2018
+            14" MacBook Pro, 2021
           </a>
+        </li>
+        <li
+          class="nested"
+        >
+          M1 Max, 64GB of RAM 😍
         </li>
         <li>
           Monitor -
