@@ -108,7 +108,7 @@
     "@types/react": "^17.0.36",
     "@types/ua-parser-js": "^0.7.36",
     "autoprefixer": "^10.4.0",
-    "babel-jest": "^27.3.1",
+    "babel-jest": "^27.4.2",
     "babel-plugin-istanbul": "^6.1.1",
     "codecov": "^3.8.3",
     "cross-env": "^7.0.3",
