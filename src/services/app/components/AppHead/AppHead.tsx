@@ -29,9 +29,14 @@ const AppHead: React.FC<AppHeadProps> = (_props) => {
 
   // Markup
   const renderMetaTag = (
-    props: React.MetaHTMLAttributes<HTMLMetaElement>,
+    data: React.MetaHTMLAttributes<HTMLMetaElement>,
     index: number
-  ) => <meta {...props} key={index} />;
+  ) => {
+    console.log(` 💬 ~ data`, index, data);
+    // return <meta {...data} key={index} />;
+    return null;
+  };
+  console.log(` 💬 ~ metadata`, metadata);
 
   return (
     <Head>

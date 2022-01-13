@@ -16,6 +16,8 @@ const StructuredData: React.FC<StructuredDataProps> = (props) => {
   // Setup
   const dataString = JSON.stringify(data);
 
+  console.log(` 💬 ~ dataString`, dataString);
+
   return (
     <script
       dangerouslySetInnerHTML={{ __html: dataString }}
