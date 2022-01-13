@@ -32,11 +32,8 @@ const AppHead: React.FC<AppHeadProps> = (_props) => {
     data: React.MetaHTMLAttributes<HTMLMetaElement>,
     index: number
   ) => {
-    console.log(` 💬 ~ data`, index, data);
-    // return <meta {...data} key={index} />;
-    return null;
+    return <meta {...data} key={index} />;
   };
-  console.log(` 💬 ~ metadata`, metadata);
 
   return (
     <Head>
