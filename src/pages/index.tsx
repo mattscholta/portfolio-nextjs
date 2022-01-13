@@ -61,11 +61,28 @@ const Index: React.FC<IndexProps> = (props) => {
               <sub className="ui-subhead" />
 
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repudiandae a saepe cumque atque ducimus corrupti accusamus
-                voluptas qui libero temporibus facilis eos autem, sint fugiat
-                voluptatem ex, quaerat nulla incidunt.
+                After <b>5+ great</b> years pushing the envelope at{' '}
+                <a href="https://thredup.com">thredUP.com</a> the time has come
+                for a new set of challenges. With a focus on front end
+                development, user-experience, user-interaction and a passion for
+                developer productivity I am beyond excited to see what
+                opportunities the future holds.
               </p>
+
+              <p>
+                The technology and tools listed on this page are my preferred
+                stack as of 2022. This year I'll be launching a new version of a
+                long time project <a href="https://barguide.io">BarGuide.io</a>{' '}
+                with all that <b>"free time"</b> I have. 🤣
+              </p>
+
+              <p>
+                So, if you're interested in learning more, ask the nearest
+                developer to help you find my <b>email address</b>. I've hidden
+                it into the website, twice actually... Otherwise reach out and
+                connect on LinkedIn.
+              </p>
+
               <Link href="/portfolio">
                 <a className={styles.link}>View Portfolio &#8594;</a>
               </Link>
