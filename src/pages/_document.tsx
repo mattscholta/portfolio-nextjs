@@ -20,17 +20,15 @@ import { script as scriptArtwork } from '@src/utils/artwork';
 class AppDocument extends Document {
   render(): JSX.Element {
     return (
-      <>
-        <Html lang="en">
-          <Head />
-          <body>
-            <div dangerouslySetInnerHTML={{ __html: scriptArtwork }} />
-            <GoogleTagManagerIFrame id={GOOGLE_TAG_MANAGER} />
-            <Main />
-            <NextScript />
-          </body>
-        </Html>
-      </>
+      <Html lang="en">
+        <Head />
+        <body>
+          <div dangerouslySetInnerHTML={{ __html: scriptArtwork }} />
+          <GoogleTagManagerIFrame id={GOOGLE_TAG_MANAGER} />
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
     );
   }
 }

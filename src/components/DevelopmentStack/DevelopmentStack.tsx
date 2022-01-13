@@ -32,6 +32,7 @@ const DevelopmentStack: React.FC<DevelopmentStackProps> = (props) => {
         <li>Express</li>
         <li>Figma</li>
         <li>Google Analytics</li>
+        <li>Google Cloud</li>
         <li>Google Tag Manger</li>
         <li>Git / Github</li>
         <li>GraphQL</li>
@@ -40,10 +41,12 @@ const DevelopmentStack: React.FC<DevelopmentStackProps> = (props) => {
         <li>JWT</li>
         <li>Kubernetes</li>
         <li>Lerna</li>
+        <li>NextJS</li>
         <li>Node.js</li>
         <li>NoSQL</li>
         <li>NPM</li>
         <li>PostCSS</li>
+        <li>Postgres</li>
         <li>React</li>
         <li>RecoilJS</li>
         <li>Redux</li>
