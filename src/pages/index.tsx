@@ -62,17 +62,22 @@ const Index: React.FC<IndexProps> = (props) => {
 
               <p>
                 After <b>5+ great</b> years pushing the envelope at{' '}
-                <a href="https://thredup.com">thredUP.com</a> the time has come
-                for a new set of challenges. With a focus on front end
-                development, user-experience, user-interaction and a passion for
-                developer productivity I am beyond excited to see what
-                opportunities the future holds.
+                <a className="u-font-bold" href="https://thredup.com">
+                  thredUP.com
+                </a>{' '}
+                the time has come for a new set of challenges. With a focus on
+                front end development, user-experience, user-interaction and a
+                passion for developer productivity I am beyond excited to see
+                what opportunities the future holds.
               </p>
 
               <p>
                 The technology and tools listed on this page are my preferred
                 stack as of 2022. This year I'll be launching a new version of a
-                long time project <a href="https://barguide.io">BarGuide.io</a>{' '}
+                long time project{' '}
+                <a className="u-font-bold" href="https://barguide.io">
+                  BarGuide.io
+                </a>{' '}
                 with all that <b>"free time"</b> I have. 🤣
               </p>
 
