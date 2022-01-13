@@ -71,33 +71,40 @@ NodeList [
             </b>
              years pushing the envelope at
              
-            <a
-              class="u-font-bold"
-              href="https://thredup.com"
-            >
+            <b>
               thredUP.com
-            </a>
-             
-            the time has come for a new set of challenges. With a focus on front end development, user-experience, user-interaction and a passion for developer productivity I am beyond excited to see what opportunities the future holds.
+            </b>
+             the time has come for a new set of challenges. With a focus on front end development, user-experience, user-interaction and a passion for developer productivity I am beyond excited to see what opportunities the future holds.
           </p>
           <p>
-            The technology and tools listed on this page are my preferred stack as of 2022. This year I'll be launching a new version of a long time project
+            The technology and tools listed on this page are my preferred stack as of 
+            <b>
+              2021
+            </b>
+            . However, this year I'd also like to complete my
              
             <a
-              class="u-font-bold"
+              href="https://www.cncf.io/certification/ckad/"
+            >
+              CKAD
+            </a>
+             and finish rolling out a new version of a long time project
+             
+            <a
               href="https://barguide.io"
             >
               BarGuide.io
             </a>
+             with all that
              
-            with all that 
             <b>
               "free time"
             </b>
              I have. 🤣
           </p>
           <p>
-            So, if you're interested in learning more, ask the nearest developer to help you find my 
+            So, if you're interested in learning more, ask the nearest developer you can find and ask them to help you find my
+             
             <b>
               email address
             </b>
@@ -379,9 +386,6 @@ NodeList [
                 Google Analytics
               </li>
               <li>
-                Google Cloud
-              </li>
-              <li>
                 Google Tag Manger
               </li>
               <li>
@@ -406,9 +410,6 @@ NodeList [
                 Lerna
               </li>
               <li>
-                NextJS
-              </li>
-              <li>
                 Node.js
               </li>
               <li>
@@ -419,9 +420,6 @@ NodeList [
               </li>
               <li>
                 PostCSS
-              </li>
-              <li>
-                Postgres
               </li>
               <li>
                 React
