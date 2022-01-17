@@ -3,7 +3,7 @@ import classnames from 'classnames';
 
 import styles from './styles.module.css';
 
-interface <%= name %>Props {
+export interface <%= name %>Props {
   className?: string;
 }
 
@@ -11,7 +11,7 @@ interface <%= name %>Props {
  * @name <%= name %>
  * @description tbd...
  */
-const <%= name %>: React.FC<<%= name %>Props> = (props) => {
+export const <%= name %>: React.FC<<%= name %>Props> = (props) => {
   const { className } = props;
 
   // Hooks
@@ -35,6 +35,3 @@ const <%= name %>: React.FC<<%= name %>Props> = (props) => {
     </div>
   );
 };
-
-export { <%= name %> };
-export type { <%= name %>Props };

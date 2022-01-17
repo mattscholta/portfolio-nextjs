@@ -4,6 +4,7 @@ import classnames from 'classnames';
 
 import { Github, LinkedIn, Twitter } from '@src/icons';
 import { analytics } from '@src/utils/analytics';
+import { BarGuideLogo } from '../BarGuideLogo/BarGuideLogo';
 
 import styles from './styles.module.css';
 
@@ -65,6 +66,7 @@ const ConnectOnline: React.FC<ConnectOnlineProps> = (props) => {
           />
           Always coding on <span className="spot-primary">Github</span>
         </a>
+
         {/*
         <a
           href="https://stackoverflow.com/story/visormatt"
@@ -96,6 +98,22 @@ const ConnectOnline: React.FC<ConnectOnlineProps> = (props) => {
             width={20}
           />
           Occasionally on <span className="spot-primary">Twitter</span>
+        </a>
+
+        <a
+          href="https://barguide.io"
+          data-ga-label="twitter"
+          onClick={onClick}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <BarGuideLogo
+            className={styles.icon}
+            fill={color.gray[7]}
+            height={20}
+            width={20}
+          />
+          Working on <span className="spot-primary">BarGuide.io</span>
         </a>
       </div>
     </div>

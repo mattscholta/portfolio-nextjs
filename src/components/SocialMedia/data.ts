@@ -1,5 +1,6 @@
 import { Github, LinkedIn, StackOverflow, Twitter } from '@src/icons';
 import { Icon } from '@src/types/icon';
+import { BarGuideLogo } from '../BarGuideLogo/BarGuideLogo';
 
 interface Data extends Partial<HTMLAnchorElement> {
   icon: React.FC<Icon>;
@@ -31,6 +32,12 @@ const data: Data[] = [
     icon: Twitter,
     label: 'twitter',
     title: 'Occasionally on Twitter'
+  },
+  {
+    href: 'https://barguide.io',
+    icon: BarGuideLogo,
+    label: 'barguide',
+    title: 'Working on BarGuide.io'
   }
 ];
 
