@@ -48,6 +48,7 @@ const DevelopmentStack: React.FC<DevelopmentStackProps> = (props) => {
         <li>PostCSS</li>
         <li>Postgres</li>
         <li>React</li>
+        <li>Remix 🤩</li>
         <li>RecoilJS</li>
         <li>Redux</li>
         <li>REST</li>
