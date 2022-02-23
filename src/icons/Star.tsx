@@ -11,7 +11,7 @@ export interface HeartProps extends Icon {}
  * @name Star
  * @description Star
  */
-const Star: React.FC<HeartProps> = (props) => {
+export const Star = (props: HeartProps) => {
   const { className, fill, height, width, ...rest } = props;
 
   return (
@@ -38,5 +38,3 @@ Star.defaultProps = {
   height: 50,
   width: 50
 };
-
-export { Star };

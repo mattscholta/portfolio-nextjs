@@ -9,7 +9,7 @@ export interface HamburgerProps extends Icon {}
  * @name Hamburger
  * @description Simple component that renders out an SVG icon
  */
-const Hamburger: React.FC<HamburgerProps> = (props) => {
+export const Hamburger = (props: HamburgerProps) => {
   const { className, fill, height = 50, width = 50, ...rest } = props;
 
   // Setup
@@ -45,5 +45,3 @@ Hamburger.defaultProps = {
   height: 50,
   width: 50
 };
-
-export { Hamburger };

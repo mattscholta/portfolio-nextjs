@@ -10,7 +10,7 @@ export interface LogoProps extends Icon {}
  * @name Logo
  * @description Logo
  */
-const Logo: React.FC<LogoProps> = (props) => {
+export const Logo = (props: LogoProps) => {
   const { className, fill, height, width, ...rest } = props;
 
   return (
@@ -39,5 +39,3 @@ Logo.defaultProps = {
   viewBox: '0 0 100 59',
   width: 100
 };
-
-export { Logo as default, Logo };

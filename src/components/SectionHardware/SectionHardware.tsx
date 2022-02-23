@@ -13,7 +13,7 @@ export interface SectionHardwareProps {
  * @name SectionHardware
  * @description Stateless Component / Pure Function
  */
-const SectionHardware: React.FC<SectionHardwareProps> = (props) => {
+export const SectionHardware = (props: SectionHardwareProps) => {
   const { className } = props;
 
   // Styles
@@ -102,5 +102,3 @@ const SectionHardware: React.FC<SectionHardwareProps> = (props) => {
     </section>
   );
 };
-
-export { SectionHardware };

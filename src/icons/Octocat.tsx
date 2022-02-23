@@ -9,7 +9,7 @@ export interface OctocatProps extends Icon {}
  * @name Octocat
  * @description Octocat
  */
-const Octocat: React.FC<OctocatProps> = (props) => {
+export const Octocat = (props: OctocatProps) => {
   const { className, color, fill, size, ...rest } = props;
 
   return (
@@ -42,5 +42,3 @@ Octocat.defaultProps = {
   fill: color.black,
   size: 50
 };
-
-export { Octocat };

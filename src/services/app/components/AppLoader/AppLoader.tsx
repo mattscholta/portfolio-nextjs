@@ -6,7 +6,7 @@ import { appAtom } from '@src/recoil/atoms/app';
 
 import styles from './styles.module.css';
 
-interface AppLoaderProps {
+export interface AppLoaderProps {
   className?: string;
   message?: string;
   state?: boolean;
@@ -17,7 +17,7 @@ interface AppLoaderProps {
  * @description A generic loading component that uses a CSS box that
  * we spin using a CSS animation
  */
-const AppLoader: React.FC<AppLoaderProps> = (props) => {
+export const AppLoader = (props: AppLoaderProps) => {
   const { className, message = 'Loading', state } = props;
 
   // Hooks
@@ -38,6 +38,3 @@ const AppLoader: React.FC<AppLoaderProps> = (props) => {
     </div>
   );
 };
-
-export { AppLoader };
-export type { AppLoaderProps };

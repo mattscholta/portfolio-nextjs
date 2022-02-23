@@ -14,7 +14,7 @@ export interface BarGuideLogoProps {
  * @name BarGuideLogo
  * @description tbd...
  */
-export const BarGuideLogo: React.FC<BarGuideLogoProps> = (props) => {
+export const BarGuideLogo = (props: BarGuideLogoProps) => {
   const { className, fill = '#FF0000', height = 50, width = 50 } = props;
 
   // Styles

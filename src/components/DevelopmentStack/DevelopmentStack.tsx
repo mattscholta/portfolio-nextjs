@@ -11,7 +11,7 @@ export interface DevelopmentStackProps {
  * @name DevelopmentStack
  * @description Stateless Component / Pure Function
  */
-const DevelopmentStack: React.FC<DevelopmentStackProps> = (props) => {
+export const DevelopmentStack = (props: DevelopmentStackProps) => {
   const { className } = props;
 
   // Styles
@@ -62,5 +62,3 @@ const DevelopmentStack: React.FC<DevelopmentStackProps> = (props) => {
     </div>
   );
 };
-
-export { DevelopmentStack };

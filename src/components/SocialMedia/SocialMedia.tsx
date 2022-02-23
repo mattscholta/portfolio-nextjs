@@ -17,7 +17,7 @@ export interface SocialMediaProps {
  * @name SocialMedia
  * @description Simple component that wraps up my social media accounts
  */
-const SocialMedia: React.FC<SocialMediaProps> = (props) => {
+export const SocialMedia = (props: SocialMediaProps) => {
   const { className, color = colors.white, fill = colors.primary } = props;
 
   // Styles
@@ -54,5 +54,3 @@ const SocialMedia: React.FC<SocialMediaProps> = (props) => {
 
   return <div className={css}>{data.map(renderLink)}</div>;
 };
-
-export { SocialMedia };

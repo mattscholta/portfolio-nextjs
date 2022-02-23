@@ -1,11 +1,11 @@
 import * as React from 'react';
 
-type PictureAttributes = React.DetailedHTMLProps<
+export type PictureAttributes = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLElement>,
   HTMLElement
 >;
 
-interface AppPictureProps extends PictureAttributes {
+export interface AppPictureProps extends PictureAttributes {
   alt?: React.ImgHTMLAttributes<HTMLImageElement>['alt'];
   loading?: React.ImgHTMLAttributes<HTMLImageElement>['loading'];
   jpg?: React.SourceHTMLAttributes<HTMLElement>['srcSet'];
@@ -21,7 +21,7 @@ interface AppPictureProps extends PictureAttributes {
  * shown the user, going from the top down, so we put the advanced "webp" up
  * top, then basic support of "srcSet" and lastly a fallback to a standard IMG
  */
-const AppPicture: React.FC<AppPictureProps> = (props) => {
+export const AppPicture = (props: AppPictureProps) => {
   const { alt = '', className, jpg, loading, png, webp, ...rest } = props;
 
   if (!jpg && !png) {
@@ -38,6 +38,3 @@ const AppPicture: React.FC<AppPictureProps> = (props) => {
     </picture>
   );
 };
-
-export { AppPicture };
-export type { AppPictureProps };

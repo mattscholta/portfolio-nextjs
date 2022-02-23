@@ -18,7 +18,7 @@ export interface BlogPreviewColumnProps {
  * @name BlogPreviewColumn
  * @description Stateless Component / Pure Function
  */
-const BlogPreviewColumn: React.FC<BlogPreviewColumnProps> = (props) => {
+export const BlogPreviewColumn = (props: BlogPreviewColumnProps) => {
   const { className, post, small: _small } = props;
   const { slug, sticky, title } = post;
 
@@ -67,5 +67,3 @@ const BlogPreviewColumn: React.FC<BlogPreviewColumnProps> = (props) => {
     </Link>
   );
 };
-
-export { BlogPreviewColumn };

@@ -11,7 +11,7 @@ export interface <%= name %>Props {
  * @name <%= name %>
  * @description tbd...
  */
-export const <%= name %>: React.FC<<%= name %>Props> = (props) => {
+export const <%= name %> = (props: <%= name %>Props) => {
   const { className } = props;
 
   // Hooks

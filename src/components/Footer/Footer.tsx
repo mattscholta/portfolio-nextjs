@@ -12,7 +12,7 @@ export interface FooterProps {}
  * @name Footer
  * @description Application Footer with social media links
  */
-const Footer: React.FC<FooterProps> = (_props) => {
+export const Footer = (_props: FooterProps) => {
   // Styles
   const css = classnames(styles.component);
   const cssCopy = classnames('u-flex container', styles.copy);
@@ -31,5 +31,3 @@ const Footer: React.FC<FooterProps> = (_props) => {
     </div>
   );
 };
-
-export { Footer };

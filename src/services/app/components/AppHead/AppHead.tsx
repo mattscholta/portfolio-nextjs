@@ -12,7 +12,7 @@ import { metadata } from '@src/services/seo/metadata';
 import { GoogleAnalytics } from '@src/services/tracking/components/GoogleAnalytics';
 import { GoogleTagManagerScript } from '@src/services/tracking/components/GoogleTagManagerScript';
 
-interface AppHeadProps {}
+export interface AppHeadProps {}
 
 /**
  * @name AppHead
@@ -20,7 +20,7 @@ interface AppHeadProps {}
  * used in our Document <head>. This can be further "extended" by any
  * sub-routes, this is simply a strong base
  */
-const AppHead: React.FC<AppHeadProps> = (_props) => {
+export const AppHead = (_props: AppHeadProps) => {
   // Hooks
   const { pathname } = useRouter();
 
@@ -48,6 +48,3 @@ const AppHead: React.FC<AppHeadProps> = (_props) => {
     </Head>
   );
 };
-
-export { AppHead };
-export type { AppHeadProps };

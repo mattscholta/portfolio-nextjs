@@ -6,7 +6,7 @@ import { modalAtom } from '@src/recoil/atoms/modal';
 
 import styles from './styles.module.css';
 
-interface AppModalProps {
+export interface AppModalProps {
   className?: string;
 }
 
@@ -16,7 +16,7 @@ interface AppModalProps {
  * us to keep the UI consistent and prevents us from having to deal with
  * potentially stacking issues.
  */
-const AppModal: React.FC<AppModalProps> = (props) => {
+export const AppModal = (props: AppModalProps) => {
   const { className } = props;
 
   // Hooks
@@ -45,6 +45,3 @@ const AppModal: React.FC<AppModalProps> = (props) => {
     </div>
   );
 };
-
-export { AppModal };
-export type { AppModalProps };

@@ -13,7 +13,7 @@ export interface SectionOtherProps {
  * @name SectionOther
  * @description Stateless Component / Pure Function
  */
-const SectionOther: React.FC<SectionOtherProps> = (props) => {
+export const SectionOther = (props: SectionOtherProps) => {
   const { className } = props;
 
   // Styles
@@ -46,5 +46,3 @@ const SectionOther: React.FC<SectionOtherProps> = (props) => {
     </section>
   );
 };
-
-export { SectionOther as default, SectionOther };

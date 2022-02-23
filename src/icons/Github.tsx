@@ -10,7 +10,7 @@ export interface GithubProps extends Icon {}
  * @name Github
  * @description Github
  */
-const Github: React.FC<GithubProps> = (props) => {
+export const Github = (props: GithubProps) => {
   const { className, fill, height, width, ...rest } = props;
 
   return (
@@ -43,5 +43,3 @@ Github.propTypes = {
   height: PropTypes.number,
   width: PropTypes.number
 };
-
-export { Github };

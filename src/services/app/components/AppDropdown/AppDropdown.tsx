@@ -5,9 +5,9 @@ import { isMobileDevice } from '@src/utils/device';
 
 import styles from './styles.module.css';
 
-interface AppDropdownProps {
-  content: React.FC<any>;
-  dropdown: React.FC<any>;
+export interface AppDropdownProps {
+  content: any;
+  dropdown: any;
 }
 
 /**
@@ -16,7 +16,7 @@ interface AppDropdownProps {
  * target "content" and a "dropdown" which is rendered as the users
  * hovers or otherwise activates the "content area"
  */
-const AppDropdown: React.FC<AppDropdownProps> = (props) => {
+export const AppDropdown = (props: AppDropdownProps) => {
   const { content: Content, dropdown: Dropdown } = props;
 
   // Hooks
@@ -59,6 +59,3 @@ const AppDropdown: React.FC<AppDropdownProps> = (props) => {
     </div>
   );
 };
-
-export { AppDropdown };
-export type { AppDropdownProps };

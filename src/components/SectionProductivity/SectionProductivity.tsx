@@ -10,7 +10,7 @@ export interface SectionProductivityProps {
  * @name SectionProductivity
  * @description Stateless Component / Pure Function
  */
-const SectionProductivity: React.FC<SectionProductivityProps> = (props) => {
+export const SectionProductivity = (props: SectionProductivityProps) => {
   const { className } = props;
 
   // Markup
@@ -47,5 +47,3 @@ const SectionProductivity: React.FC<SectionProductivityProps> = (props) => {
     </section>
   );
 };
-
-export { SectionProductivity };
