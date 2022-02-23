@@ -30,7 +30,4 @@ const logger = pino({
   }
 });
 
-// Just to match up a bit closer with console
-logger.log = logger.info;
-
 export { logger };
