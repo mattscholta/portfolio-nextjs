@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-interface StructuredDataProps {
+export interface StructuredDataProps {
   data: any;
 }
 
@@ -10,7 +10,7 @@ interface StructuredDataProps {
  * @description Adds JavaScript notation embedded in a <script> tag for
  * SEO (JSON-LD format)
  */
-const StructuredData: React.FC<StructuredDataProps> = (props) => {
+export const StructuredData = (props: StructuredDataProps) => {
   const { data } = props;
 
   // Setup
@@ -25,6 +25,3 @@ const StructuredData: React.FC<StructuredDataProps> = (props) => {
     />
   );
 };
-
-export { StructuredData };
-export type { StructuredDataProps };

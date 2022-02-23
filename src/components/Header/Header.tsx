@@ -19,7 +19,7 @@ export interface HeaderProps {}
  * @name Header
  * @description Primary Navigation Header
  */
-const Header: React.FC<HeaderProps> = (_props) => {
+export const Header = (_props: HeaderProps) => {
   // Hooks
   const [app, setApp] = useRecoilState(appAtom);
   const { navigation } = app;
@@ -98,5 +98,3 @@ const Header: React.FC<HeaderProps> = (_props) => {
     </div>
   );
 };
-
-export { Header };

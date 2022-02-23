@@ -2,7 +2,7 @@ import * as React from 'react';
 import classnames from 'classnames';
 import Link from 'next/link';
 
-interface AppErrorComponentProps {
+export interface AppErrorComponentProps {
   className?: string;
   message?: string;
 }
@@ -11,7 +11,7 @@ interface AppErrorComponentProps {
  * @name AppErrorComponent
  * @description Used to display errors to our user.
  */
-const AppErrorComponent: React.FC<AppErrorComponentProps> = (props) => {
+export const AppErrorComponent = (props: AppErrorComponentProps) => {
   const { className, message } = props;
 
   // Styles
@@ -52,6 +52,3 @@ const AppErrorComponent: React.FC<AppErrorComponentProps> = (props) => {
     </div>
   );
 };
-
-export { AppErrorComponent };
-export type { AppErrorComponentProps };

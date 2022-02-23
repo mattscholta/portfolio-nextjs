@@ -3,7 +3,7 @@ import classnames from 'classnames';
 
 import styles from './styles.module.css';
 
-interface AppErrorMessageProps {
+export interface AppErrorMessageProps {
   className?: string;
   message?: string;
 }
@@ -12,10 +12,9 @@ interface AppErrorMessageProps {
  * @name AppErrorMessage
  * @description Used to display errors to our user.
  */
-const AppErrorMessage: React.FC<AppErrorMessageProps> = (props) => {
+export const AppErrorMessage = (props: AppErrorMessageProps) => {
   const { className, message } = props;
 
-  // Styles
   // Styles
   const cssComponent = classnames(styles.component, className);
 
@@ -44,6 +43,3 @@ const AppErrorMessage: React.FC<AppErrorMessageProps> = (props) => {
     </div>
   );
 };
-
-export { AppErrorMessage };
-export type { AppErrorMessageProps };

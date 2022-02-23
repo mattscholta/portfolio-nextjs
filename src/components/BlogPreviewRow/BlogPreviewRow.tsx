@@ -18,7 +18,7 @@ export interface BlogPreviewRowProps {
  * @name BlogPreviewRow
  * @description Stateless Component / Pure Function
  */
-const BlogPreviewRow: React.FC<BlogPreviewRowProps> = (props) => {
+export const BlogPreviewRow = (props: BlogPreviewRowProps) => {
   const { className, post } = props;
   const { slug, sticky, title } = post;
 
@@ -70,5 +70,3 @@ const BlogPreviewRow: React.FC<BlogPreviewRowProps> = (props) => {
     </Link>
   );
 };
-
-export { BlogPreviewRow };

@@ -8,7 +8,7 @@ import { AppHead } from '@src/services/app/components/AppHead';
 import { AppLifeCycle } from '@src/services/app/components/AppLifeCycle';
 import { AppLoader } from '../AppLoader/AppLoader';
 
-interface AppComponentProps {
+export interface AppComponentProps {
   global: any;
   pageProps: any;
 }
@@ -19,7 +19,7 @@ interface AppComponentProps {
  * We've nested it so that the app can make use of any cookies which are set
  * as props to our page components.
  */
-const AppComponent: React.FC<AppComponentProps> = (props) => {
+export const AppComponent: React.FC<AppComponentProps> = (props) => {
   const { children, global: _global } = props;
 
   // Setup
@@ -48,6 +48,3 @@ const AppComponent: React.FC<AppComponentProps> = (props) => {
     </RecoilRoot>
   );
 };
-
-export { AppComponent };
-export type { AppComponentProps };

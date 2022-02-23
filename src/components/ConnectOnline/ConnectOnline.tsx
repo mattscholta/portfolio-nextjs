@@ -16,7 +16,7 @@ export interface ConnectOnlineProps {
  * @name ConnectOnline
  * @description Stateless Component / Pure Function
  */
-const ConnectOnline: React.FC<ConnectOnlineProps> = (props) => {
+export const ConnectOnline = (props: ConnectOnlineProps) => {
   const { className } = props;
 
   // Styles
@@ -119,5 +119,3 @@ const ConnectOnline: React.FC<ConnectOnlineProps> = (props) => {
     </div>
   );
 };
-
-export { ConnectOnline };

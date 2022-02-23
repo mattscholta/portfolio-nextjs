@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-interface GoogleTagManagerScriptProps {
+export interface GoogleTagManagerScriptProps {
   id: string;
 }
 
@@ -10,9 +10,7 @@ interface GoogleTagManagerScriptProps {
  * @description GTM requires a two part implementation, this script is
  * responsible for loading GTM which loads our Tags and Pixels
  */
-const GoogleTagManagerScript: React.FC<GoogleTagManagerScriptProps> = (
-  props
-) => {
+export const GoogleTagManagerScript = (props: GoogleTagManagerScriptProps) => {
   const { id } = props;
 
   // Setup
@@ -26,6 +24,3 @@ const GoogleTagManagerScript: React.FC<GoogleTagManagerScriptProps> = (
 
   return <script dangerouslySetInnerHTML={{ __html }} type="text/javascript" />;
 };
-
-export { GoogleTagManagerScript };
-export type { GoogleTagManagerScriptProps };

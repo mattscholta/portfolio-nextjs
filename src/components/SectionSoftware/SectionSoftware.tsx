@@ -10,7 +10,7 @@ export interface SectionSoftwareProps {
  * @name SectionSoftware
  * @description Stateless Component / Pure Function
  */
-const SectionSoftware: React.FC<SectionSoftwareProps> = (props) => {
+export const SectionSoftware = (props: SectionSoftwareProps) => {
   const { className } = props;
 
   // Setup
@@ -88,5 +88,3 @@ const SectionSoftware: React.FC<SectionSoftwareProps> = (props) => {
     </section>
   );
 };
-
-export { SectionSoftware };

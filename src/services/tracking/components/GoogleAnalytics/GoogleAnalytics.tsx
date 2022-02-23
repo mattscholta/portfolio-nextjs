@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-interface GoogleAnalyticsProps {
+export interface GoogleAnalyticsProps {
   id: string;
 }
 
@@ -10,7 +10,7 @@ interface GoogleAnalyticsProps {
  * @description GTM requires a two part implementation, this script is
  * responsible for loading GTM which loads our Tags and Pixels
  */
-const GoogleAnalytics: React.FC<GoogleAnalyticsProps> = (props) => {
+export const GoogleAnalytics = (props: GoogleAnalyticsProps) => {
   const { id } = props;
 
   // Setup
@@ -23,6 +23,3 @@ const GoogleAnalytics: React.FC<GoogleAnalyticsProps> = (props) => {
 
   return <script dangerouslySetInnerHTML={{ __html }} type="text/javascript" />;
 };
-
-export { GoogleAnalytics };
-export type { GoogleAnalyticsProps };

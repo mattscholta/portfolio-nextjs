@@ -9,7 +9,7 @@ export interface TwitterProps extends Icon {}
  * @name Twitter
  * @description Twitter
  */
-const Twitter: React.FC<TwitterProps> = (props) => {
+export const Twitter = (props: TwitterProps) => {
   const { className, fill, height, width, ...rest } = props;
 
   return (
@@ -34,5 +34,3 @@ Twitter.defaultProps = {
   height: 41,
   width: 50
 };
-
-export { Twitter };

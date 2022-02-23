@@ -17,7 +17,7 @@ export interface PreviewCardProps {
  * @external https://www.w3schools.com/howto/howto_css_flip_box.asp
  * @description Preview cards that use a CSS flip to reveal a bit more data
  */
-const PreviewCard: React.FC<PreviewCardProps> = (props) => {
+export const PreviewCard = (props: PreviewCardProps) => {
   const { className, description, image, slug, title } = props;
 
   // Styles
@@ -49,5 +49,3 @@ const PreviewCard: React.FC<PreviewCardProps> = (props) => {
     </div>
   );
 };
-
-export { PreviewCard as default, PreviewCard };

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-interface AppErrorRedirectProps {
+export interface AppErrorRedirectProps {
   className?: string;
   message?: string;
 }
@@ -9,7 +9,7 @@ interface AppErrorRedirectProps {
  * @name AppErrorRedirect
  * @description This guy is used in our fetch logic
  */
-const AppErrorRedirect: React.FC<AppErrorRedirectProps> = (props) => {
+export const AppErrorRedirect = (props: AppErrorRedirectProps) => {
   const { message } = props;
 
   // 🔌 Short Circuit
@@ -17,6 +17,3 @@ const AppErrorRedirect: React.FC<AppErrorRedirectProps> = (props) => {
 
   return <div className={props.className}>{message}</div>;
 };
-
-export { AppErrorRedirect };
-export type { AppErrorRedirectProps };

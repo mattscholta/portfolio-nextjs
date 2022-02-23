@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-interface GoogleTagManagerIFrameProps {
+export interface GoogleTagManagerIFrameProps {
   id: string;
 }
 
@@ -10,9 +10,7 @@ interface GoogleTagManagerIFrameProps {
  * @description GTM requires a two part implementation, this iFrame is
  * used when Javascript has been disabled
  */
-const GoogleTagManagerIFrame: React.FC<GoogleTagManagerIFrameProps> = (
-  props
-) => {
+export const GoogleTagManagerIFrame = (props: GoogleTagManagerIFrameProps) => {
   const { id } = props;
 
   // Setup
@@ -33,6 +31,3 @@ const GoogleTagManagerIFrame: React.FC<GoogleTagManagerIFrameProps> = (
     </noscript>
   );
 };
-
-export { GoogleTagManagerIFrame };
-export type { GoogleTagManagerIFrameProps };

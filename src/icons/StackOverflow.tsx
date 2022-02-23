@@ -9,7 +9,7 @@ export interface StackOverflowProps extends Icon {}
  * @name StackOverflow
  * @description StackOverflow
  */
-const StackOverflow: React.FC<StackOverflowProps> = (props) => {
+export const StackOverflow = (props: StackOverflowProps) => {
   const { className, fill, height, width, ...rest } = props;
 
   return (
@@ -37,5 +37,3 @@ StackOverflow.defaultProps = {
   height: 41,
   width: 50
 };
-
-export { StackOverflow };

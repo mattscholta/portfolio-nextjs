@@ -5,7 +5,7 @@ import { useRecoilState } from 'recoil';
 import { appAtom } from '@src/recoil/atoms/app';
 import { setTrackingDefaults } from '@src/utils/tracking';
 
-interface AppLifeCycleProps {}
+export interface AppLifeCycleProps {}
 
 /**
  * @name AppLifeCycle
@@ -15,7 +15,8 @@ interface AppLifeCycleProps {}
  *
  * We're using it for mount and un-mount
  */
-const AppLifeCycle: React.FC<AppLifeCycleProps> = (_props) => {
+export const AppLifeCycle = (_props: AppLifeCycleProps) => {
+  // Hooks
   const [app, setApp] = useRecoilState(appAtom);
   const { events } = useRouter();
 
@@ -36,6 +37,3 @@ const AppLifeCycle: React.FC<AppLifeCycleProps> = (_props) => {
 
   return null;
 };
-
-export { AppLifeCycle };
-export type { AppLifeCycleProps };

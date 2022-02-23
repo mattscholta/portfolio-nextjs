@@ -17,7 +17,7 @@ export interface WorkHistoryProps {
  * @name WorkHistory
  * @description Stateless Component / Pure Function
  */
-const WorkHistory: React.FC<WorkHistoryProps> = (props) => {
+export const WorkHistory = (props: WorkHistoryProps) => {
   const { className } = props;
 
   // Styles
@@ -75,5 +75,3 @@ const WorkHistory: React.FC<WorkHistoryProps> = (props) => {
     </div>
   );
 };
-
-export { WorkHistory };

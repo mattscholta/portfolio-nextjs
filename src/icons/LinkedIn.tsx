@@ -9,7 +9,7 @@ export interface LinkedInProps extends Icon {}
  * @name LinkedIn
  * @description LinkedIn
  */
-const LinkedIn: React.FC<LinkedInProps> = (props) => {
+export const LinkedIn = (props: LinkedInProps) => {
   const { className, color, fill, height, width, ...rest } = props;
 
   return (
@@ -48,5 +48,3 @@ LinkedIn.defaultProps = {
   height: 50,
   width: 50
 };
-
-export { LinkedIn };
