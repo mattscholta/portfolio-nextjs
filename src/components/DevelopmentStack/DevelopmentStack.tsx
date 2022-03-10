@@ -34,7 +34,7 @@ export const DevelopmentStack = (props: DevelopmentStackProps) => {
         <li>Google Analytics</li>
         <li>Google Cloud</li>
         <li>Google Tag Manger</li>
-        <li>Git / Github</li>
+        <li>Git/GitHub</li>
         <li>GraphQL</li>
         <li>HTML</li>
         <li>Javascript</li>
@@ -44,7 +44,7 @@ export const DevelopmentStack = (props: DevelopmentStackProps) => {
         <li>NextJS</li>
         <li>Node.js</li>
         <li>NoSQL</li>
-        <li>NPM</li>
+        <li>npm</li>
         <li>PostCSS</li>
         <li>Postgres</li>
         <li>React</li>
@@ -56,6 +56,7 @@ export const DevelopmentStack = (props: DevelopmentStackProps) => {
         <li>SQL / MySQL</li>
         <li>Sketch</li>
         <li>Swarm</li>
+        <li>Tailwind CSS</li>
         <li>TypeScript</li>
         <li>Webpack</li>
       </ul>

@@ -414,7 +414,7 @@ NodeList [
                 Google Tag Manger
               </li>
               <li>
-                Git / Github
+                Git/GitHub
               </li>
               <li>
                 GraphQL
@@ -444,7 +444,7 @@ NodeList [
                 NoSQL
               </li>
               <li>
-                NPM
+                npm
               </li>
               <li>
                 PostCSS
@@ -478,6 +478,9 @@ NodeList [
               </li>
               <li>
                 Swarm
+              </li>
+              <li>
+                Tailwind CSS
               </li>
               <li>
                 TypeScript
