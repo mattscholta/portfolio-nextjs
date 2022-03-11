@@ -4,7 +4,12 @@
   text-rendering: geometricPrecision;
 }
 
+html {
+  background-color: var(--spot-grey-8);
+}
+
 body {
+  background-color: theme('colors.white');
   color: theme('colors.black');
   font-family: theme('fontFamily.copy');
   font-size: theme('fontSize.14');
