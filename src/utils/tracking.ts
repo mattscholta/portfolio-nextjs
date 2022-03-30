@@ -19,7 +19,7 @@ export const setTrackingDefaults = (): void => {
 
   if (USE_LOGGER) logger.info(defaults, `🧰 Tracking defaults`);
 
-  window.gtag('set', defaults);
+  if (window.gtag) window.gtag('set', defaults);
 };
 
 /**
@@ -31,7 +31,7 @@ export const setTrackingDefaults = (): void => {
 export const setUser = (config: Gtag.CustomParams | boolean): void => {
   if (USE_LOGGER) logger.info({ config }, `🦸‍♀ User configuration`);
 
-  window.gtag('set', 'user_properties', config);
+  if (window.gtag) window.gtag('set', 'user_properties', config);
 };
 
 /**
@@ -48,7 +48,7 @@ export const trackingError = (params: {
 }): void => {
   if (USE_LOGGER) logger.error(params, `🚨 Tracking error`);
 
-  window.gtag('event', 'exception', params);
+  if (window.gtag) window.gtag('event', 'exception', params);
 };
 
 export const trackingEvent = <T = GenericTrackingParams>(
@@ -57,5 +57,5 @@ export const trackingEvent = <T = GenericTrackingParams>(
 ): void => {
   if (USE_LOGGER) logger.info({ params }, `🎟️ Tracking event "${type}"`);
 
-  window.gtag('event', type, params);
+  if (window.gtag) window.gtag('event', type, params);
 };
