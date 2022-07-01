@@ -93,7 +93,7 @@
     "@barguide/dotfiles": "^1.0.6",
     "@barguide/icons": "^2.0.25",
     "@commitlint/cli": "^16.2.3",
-    "@commitlint/config-conventional": "^16.2.1",
+    "@commitlint/config-conventional": "^17.0.3",
     "@cypress/code-coverage": "^3.9.12",
     "@next/bundle-analyzer": "^12.1.6",
     "@testing-library/dom": "^8.12.0",
